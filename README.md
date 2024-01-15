@@ -20,8 +20,8 @@ Changing variables:
 - Simulators fidelity (LOW / MED / HIGH / ULTRA)
 - Time step (5 variants or sth)
 
+## Tips and tricks
+- [ ] To be done
+
 ## Contributions
 - [ ] TBD
-
-## Tips and tricks
-...
