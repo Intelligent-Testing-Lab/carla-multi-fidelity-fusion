@@ -2,7 +2,16 @@
 
 ## Requirements
 
-- [ ] Write instructions how to run simulator
+- [ ] TBD: write instructions how to replicate data
+
+
+## Proggress milestones
+
+- [ ] Set up ADS (like Apollo) to run on CARLA
+- [ ] Define a logical scenario (e.g. a cut-in)
+- [ ] N-wise enumeration for to draw concrete scenario
+- [ ] Change fidelity parameters and save results
+- [ ] Verify determinism for each fidelity settigs
 
 
 ## Collecting data
@@ -10,7 +19,7 @@
 ### Requirements
 ***to be further specified***
 
-Generate 1000s random scenarios
+Generate 100s random scenarios
 
 Input: scenario vector
 Output: Fitness score (TTC maybe?)
