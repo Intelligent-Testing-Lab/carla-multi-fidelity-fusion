@@ -4,6 +4,8 @@ This repository contains several experiments for running CARLA at diffrent fidel
 
 ## Repository structure
 
+> [!NOTE]  
+> Need to update
 Repository is divided in following structure
 
 - `experiments/`
