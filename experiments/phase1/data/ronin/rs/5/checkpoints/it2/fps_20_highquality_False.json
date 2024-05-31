@@ -1,0 +1,109 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 6.817119000064671,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 136.2500020302832,
+                "duration_system": 500.9854733943939,
+                "total_length": 586.7581305184865
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 12.959999999999999,
+                "score_penalty": 0.1296,
+                "score_route": 100.0
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Completed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.audi.etron and id=895 at (x=-67.024, y=6.665, z=9.885)",
+                        "Agent collided against object with type=vehicle.audi.etron and id=866 at (x=-97.203, y=11.566, z=9.33)",
+                        "Agent collided against object with type=vehicle.audi.etron and id=866 at (x=-124.732, y=6.828, z=8.618)",
+                        "Agent collided against object with type=vehicle.audi.etron and id=866 at (x=-212.692, y=11.029, z=4.104)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 136.2500020302832,
+                    "duration_system": 500.9854733943939,
+                    "route_length": 586.7581305184865
+                },
+                "route_id": "RouteScenario_219",
+                "scores": {
+                    "score_composed": 12.959999999999999,
+                    "score_penalty": 0.1296,
+                    "score_route": 100.0
+                },
+                "status": "Completed"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "12.960",
+        "100.000",
+        "0.130",
+        "0.000",
+        "6.817",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000"
+    ]
+}
