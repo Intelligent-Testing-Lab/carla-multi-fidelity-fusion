@@ -1,0 +1,117 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 6.550298632671147,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 2.183432877557049,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 615.0666987448931,
+                "duration_system": 1973.388487815857,
+                "exceptions": [
+                    [
+                        "RouteScenario_154",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 753.2915775123195
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 13.13260234369541,
+                "score_penalty": 0.216,
+                "score_route": 60.79908492451579
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.mustang.mustang and id=16564 at (x=16.05, y=110.343, z=0.033)",
+                        "Agent collided against object with type=vehicle.mustang.mustang and id=16564 at (x=15.816, y=107.32, z=0.036)",
+                        "Agent collided against object with type=vehicle.mustang.mustang and id=16564 at (x=14.869, y=101.057, z=0.033)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 615.0666987448931,
+                    "duration_system": 1973.388487815857,
+                    "route_length": 753.2915775123195
+                },
+                "route_id": "RouteScenario_154",
+                "scores": {
+                    "score_composed": 13.13260234369541,
+                    "score_penalty": 0.216,
+                    "score_route": 60.79908492451579
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "13.133",
+        "60.799",
+        "0.216",
+        "0.000",
+        "6.550",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "2.183",
+        "0.000"
+    ]
+}
