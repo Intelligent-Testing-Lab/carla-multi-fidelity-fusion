@@ -1,0 +1,166 @@
+{
+    "_checkpoint": {
+        "global_record": {},
+        "progress": [
+            5,
+            8
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=15.842, y=83.056, z=0.034)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 289.05000430718064,
+                    "duration_system": 1264.304275751114,
+                    "route_length": 600.9698660163704
+                },
+                "route_id": "RouteScenario_231",
+                "scores": {
+                    "score_composed": 12.717671990996614,
+                    "score_penalty": 1.0,
+                    "score_route": 12.717671990996614
+                },
+                "status": "Failed - Agent got blocked"
+            },
+            {
+                "index": 1,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=-15.79, y=71.146, z=0.033)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 186.60000278055668,
+                    "duration_system": 655.390725851059,
+                    "route_length": 696.0198209925511
+                },
+                "route_id": "RouteScenario_248",
+                "scores": {
+                    "score_composed": 0.7639698175672078,
+                    "score_penalty": 1.0,
+                    "score_route": 0.7639698175672078
+                },
+                "status": "Failed - Agent got blocked"
+            },
+            {
+                "index": 2,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [],
+                    "outside_route_lanes": [],
+                    "red_light": [
+                        "Agent ran a red light 5833 at (x=-389.3, y=21.0, z=0.0)"
+                    ],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=-364.611, y=27.274, z=0.034)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 441.9500065855682,
+                    "duration_system": 1914.8638825416565,
+                    "route_length": 636.2950486932326
+                },
+                "route_id": "RouteScenario_260",
+                "scores": {
+                    "score_composed": 16.255640807340082,
+                    "score_penalty": 0.7,
+                    "score_route": 23.222344010485834
+                },
+                "status": "Failed - Agent got blocked"
+            },
+            {
+                "index": 3,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [],
+                    "outside_route_lanes": [],
+                    "red_light": [
+                        "Agent ran a red light 6166 at (x=-389.3, y=21.0, z=0.0)"
+                    ],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=-365.013, y=27.494, z=0.034)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 518.6500077284873,
+                    "duration_system": 2251.5451283454895,
+                    "route_length": 635.294181662973
+                },
+                "route_id": "RouteScenario_261",
+                "scores": {
+                    "score_composed": 11.2687246534477,
+                    "score_penalty": 0.7,
+                    "score_route": 16.098178076353857
+                },
+                "status": "Failed - Agent got blocked"
+            },
+            {
+                "index": 4,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=15.874, y=89.111, z=0.033)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 256.00000381469727,
+                    "duration_system": 1106.5743644237518,
+                    "route_length": 422.8387412171554
+                },
+                "route_id": "RouteScenario_273",
+                "scores": {
+                    "score_composed": 5.2178272094331,
+                    "score_penalty": 1.0,
+                    "score_route": 5.2178272094331
+                },
+                "status": "Failed - Agent got blocked"
+            }
+        ]
+    },
+    "eligible": false,
+    "entry_status": "Started",
+    "labels": [],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": []
+}
