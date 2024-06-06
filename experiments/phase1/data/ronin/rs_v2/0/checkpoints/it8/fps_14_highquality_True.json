@@ -1,0 +1,119 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 21.625334609743472,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 4.325066921948695
+            },
+            "meta": {
+                "duration_game": 1012.7857595607638,
+                "duration_system": 3069.9322147369385,
+                "exceptions": [
+                    [
+                        "RouteScenario_141",
+                        0,
+                        "Failed - Agent got blocked"
+                    ]
+                ],
+                "total_length": 478.09525655866923
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 3.760529374011458,
+                "score_penalty": 0.07776,
+                "score_route": 48.360717258377804
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.toyota.prius and id=2537 at (x=15.984, y=109.894, z=0.033)",
+                        "Agent collided against object with type=vehicle.toyota.prius and id=2537 at (x=15.554, y=106.923, z=0.042)",
+                        "Agent collided against object with type=vehicle.bmw.isetta and id=2544 at (x=14.69, y=103.372, z=0.033)",
+                        "Agent collided against object with type=vehicle.bmw.isetta and id=2544 at (x=14.271, y=99.559, z=0.033)",
+                        "Agent collided against object with type=vehicle.bmw.isetta and id=2544 at (x=14.18, y=96.482, z=0.045)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=14.137, y=92.978, z=0.033)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 1012.7857595607638,
+                    "duration_system": 3069.9322147369385,
+                    "route_length": 478.09525655866923
+                },
+                "route_id": "RouteScenario_141",
+                "scores": {
+                    "score_composed": 3.760529374011458,
+                    "score_penalty": 0.07776,
+                    "score_route": 48.360717258377804
+                },
+                "status": "Failed - Agent got blocked"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "3.761",
+        "48.361",
+        "0.078",
+        "0.000",
+        "21.625",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "4.325"
+    ]
+}
