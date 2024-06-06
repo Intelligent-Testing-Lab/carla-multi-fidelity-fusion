@@ -3,40 +3,33 @@
         "global_record": {
             "index": -1,
             "infractions": {
-                "collisions_layout": 6.050322946089655,
+                "collisions_layout": 0.0,
                 "collisions_pedestrian": 0.0,
                 "collisions_vehicle": 0.0,
                 "outside_route_lanes": 0.0,
                 "red_light": 0.0,
                 "route_dev": 0.0,
-                "route_timeout": 6.050322946089655,
-                "stop_infraction": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 4.363053491878144,
                 "vehicle_blocked": 0.0
             },
             "meta": {
-                "duration_game": 183.05555691942573,
-                "duration_system": 616.0208926200867,
-                "exceptions": [
-                    [
-                        "RouteScenario_429",
-                        0,
-                        "Failed - Agent timed out"
-                    ]
-                ],
-                "total_length": 209.78603498389884
+                "duration_game": 66.73333681374788,
+                "duration_system": 202.26904392242432,
+                "total_length": 229.19728164266314
             },
             "route_id": -1,
             "scores": {
-                "score_composed": 51.21040676213093,
-                "score_penalty": 0.65,
-                "score_route": 78.78524117250912
+                "score_composed": 80.0,
+                "score_penalty": 0.8,
+                "score_route": 100.0
             },
             "scores_std_dev": {
                 "score_composed": "NaN",
                 "score_penalty": "NaN",
                 "score_route": "NaN"
             },
-            "status": "Failed"
+            "status": "Completed"
         },
         "progress": [
             1,
@@ -46,37 +39,35 @@
             {
                 "index": 0,
                 "infractions": {
-                    "collisions_layout": [
-                        "Agent collided against object with type=static.guardrail and id=0 at (x=383.211, y=-69.956, z=0.034)"
-                    ],
+                    "collisions_layout": [],
                     "collisions_pedestrian": [],
                     "collisions_vehicle": [],
                     "outside_route_lanes": [],
                     "red_light": [],
                     "route_dev": [],
-                    "route_timeout": [
-                        "Route timeout."
+                    "route_timeout": [],
+                    "stop_infraction": [
+                        "Agent ran a stop with id=34840 at (x=106.767, y=14.1, z=0.0)"
                     ],
-                    "stop_infraction": [],
                     "vehicle_blocked": []
                 },
                 "meta": {
-                    "duration_game": 183.05555691942573,
-                    "duration_system": 616.0208926200867,
-                    "route_length": 209.78603498389884
+                    "duration_game": 66.73333681374788,
+                    "duration_system": 202.26904392242432,
+                    "route_length": 229.19728164266314
                 },
-                "route_id": "RouteScenario_429",
+                "route_id": "RouteScenario_546",
                 "scores": {
-                    "score_composed": 51.21040676213093,
-                    "score_penalty": 0.65,
-                    "score_route": 78.78524117250912
+                    "score_composed": 80.0,
+                    "score_penalty": 0.8,
+                    "score_route": 100.0
                 },
-                "status": "Failed - Agent timed out"
+                "status": "Completed"
             }
         ]
     },
     "eligible": true,
-    "entry_status": "Finished with agent errors",
+    "entry_status": "Finished",
     "labels": [
         "Avg. driving score",
         "Avg. route completion",
@@ -99,17 +90,17 @@
         "carla_lidar"
     ],
     "values": [
-        "51.210",
-        "78.785",
-        "0.650",
-        "0.000",
-        "0.000",
-        "6.050",
+        "80.000",
+        "100.000",
+        "0.800",
         "0.000",
         "0.000",
         "0.000",
         "0.000",
-        "6.050",
+        "4.363",
+        "0.000",
+        "0.000",
+        "0.000",
         "0.000"
     ]
 }

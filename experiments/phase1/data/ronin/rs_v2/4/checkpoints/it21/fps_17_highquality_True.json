@@ -3,40 +3,33 @@
         "global_record": {
             "index": -1,
             "infractions": {
-                "collisions_layout": 6.050322946089655,
+                "collisions_layout": 3.300212348372263,
                 "collisions_pedestrian": 0.0,
                 "collisions_vehicle": 0.0,
                 "outside_route_lanes": 0.0,
                 "red_light": 0.0,
                 "route_dev": 0.0,
-                "route_timeout": 6.050322946089655,
+                "route_timeout": 0.0,
                 "stop_infraction": 0.0,
                 "vehicle_blocked": 0.0
             },
             "meta": {
-                "duration_game": 183.05555691942573,
-                "duration_system": 616.0208926200867,
-                "exceptions": [
-                    [
-                        "RouteScenario_429",
-                        0,
-                        "Failed - Agent timed out"
-                    ]
-                ],
-                "total_length": 209.78603498389884
+                "duration_game": 170.52941239997745,
+                "duration_system": 582.9582934379578,
+                "total_length": 303.01080489357656
             },
             "route_id": -1,
             "scores": {
-                "score_composed": 51.21040676213093,
+                "score_composed": 65.0,
                 "score_penalty": 0.65,
-                "score_route": 78.78524117250912
+                "score_route": 100.0
             },
             "scores_std_dev": {
                 "score_composed": "NaN",
                 "score_penalty": "NaN",
                 "score_route": "NaN"
             },
-            "status": "Failed"
+            "status": "Completed"
         },
         "progress": [
             1,
@@ -47,36 +40,34 @@
                 "index": 0,
                 "infractions": {
                     "collisions_layout": [
-                        "Agent collided against object with type=static.guardrail and id=0 at (x=383.211, y=-69.956, z=0.034)"
+                        "Agent collided against object with type=static.prop.streetbarrier and id=34363 at (x=190.024, y=119.449, z=0.254)"
                     ],
                     "collisions_pedestrian": [],
                     "collisions_vehicle": [],
                     "outside_route_lanes": [],
                     "red_light": [],
                     "route_dev": [],
-                    "route_timeout": [
-                        "Route timeout."
-                    ],
+                    "route_timeout": [],
                     "stop_infraction": [],
                     "vehicle_blocked": []
                 },
                 "meta": {
-                    "duration_game": 183.05555691942573,
-                    "duration_system": 616.0208926200867,
-                    "route_length": 209.78603498389884
+                    "duration_game": 170.52941239997745,
+                    "duration_system": 582.9582934379578,
+                    "route_length": 303.01080489357656
                 },
-                "route_id": "RouteScenario_429",
+                "route_id": "RouteScenario_65",
                 "scores": {
-                    "score_composed": 51.21040676213093,
+                    "score_composed": 65.0,
                     "score_penalty": 0.65,
-                    "score_route": 78.78524117250912
+                    "score_route": 100.0
                 },
-                "status": "Failed - Agent timed out"
+                "status": "Completed"
             }
         ]
     },
     "eligible": true,
-    "entry_status": "Finished with agent errors",
+    "entry_status": "Finished",
     "labels": [
         "Avg. driving score",
         "Avg. route completion",
@@ -99,17 +90,17 @@
         "carla_lidar"
     ],
     "values": [
-        "51.210",
-        "78.785",
+        "65.000",
+        "100.000",
         "0.650",
         "0.000",
         "0.000",
-        "6.050",
+        "3.300",
         "0.000",
         "0.000",
         "0.000",
         "0.000",
-        "6.050",
+        "0.000",
         "0.000"
     ]
 }
