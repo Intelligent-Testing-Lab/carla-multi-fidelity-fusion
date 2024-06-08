@@ -1,9 +1,8 @@
 {
     "_checkpoint": {
         "global_record": {},
-<<<<<<< HEAD
         "progress": [
-            98,
+            100,
             132
         ],
         "records": [
@@ -2764,18 +2763,69 @@
                     "score_route": 55.89808917746396
                 },
                 "status": "Failed - Agent timed out"
+            },
+            {
+                "index": 98,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 1.0 meters (0.56% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 233.06667882204056,
+                    "duration_system": 604.4007294178009,
+                    "route_length": 279.943666502867
+                },
+                "route_id": "RouteScenario_98",
+                "scores": {
+                    "score_composed": 62.5214936745127,
+                    "score_penalty": 0.9943820358342093,
+                    "score_route": 62.87472160743735
+                },
+                "status": "Failed - Agent timed out"
+            },
+            {
+                "index": 99,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 23.06666786968708,
+                    "duration_system": 59.33418130874634,
+                    "route_length": 24.010483205375078
+                },
+                "route_id": "RouteScenario_99",
+                "scores": {
+                    "score_composed": 87.56648386952976,
+                    "score_penalty": 1.0,
+                    "score_route": 87.56648386952976
+                },
+                "status": "Failed - Agent timed out"
             }
         ]
     },
     "eligible": false,
     "entry_status": "Started",
-=======
-        "progress": [],
-        "records": []
-    },
-    "eligible": "",
-    "entry_status": "",
->>>>>>> ea0c6f3dea806f9dd1d21fbbf296cdc476c85668
     "labels": [],
     "sensors": [
         "carla_camera",

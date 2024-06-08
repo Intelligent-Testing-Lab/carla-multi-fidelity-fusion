@@ -1,9 +1,8 @@
 {
     "_checkpoint": {
         "global_record": {},
-<<<<<<< HEAD
         "progress": [
-            104,
+            105,
             132
         ],
         "records": [
@@ -2952,18 +2951,39 @@
                     "score_route": 100.0
                 },
                 "status": "Completed"
+            },
+            {
+                "index": 104,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=-240.1, y=-47.611, z=10.033)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 197.33334362506866,
+                    "duration_system": 496.02668499946594,
+                    "route_length": 574.8364139339924
+                },
+                "route_id": "RouteScenario_104",
+                "scores": {
+                    "score_composed": 14.09859870738347,
+                    "score_penalty": 1.0,
+                    "score_route": 14.09859870738347
+                },
+                "status": "Failed - Agent got blocked"
             }
         ]
     },
     "eligible": false,
     "entry_status": "Started",
-=======
-        "progress": [],
-        "records": []
-    },
-    "eligible": "",
-    "entry_status": "",
->>>>>>> ea0c6f3dea806f9dd1d21fbbf296cdc476c85668
     "labels": [],
     "sensors": [
         "carla_camera",
