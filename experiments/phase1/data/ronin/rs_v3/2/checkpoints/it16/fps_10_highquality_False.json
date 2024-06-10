@@ -1,0 +1,112 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 8.844313693656684,
+                "outside_route_lanes": 2.948104564552228,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 2.948104564552228,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 234.80000349879265,
+                "duration_system": 501.84905529022217,
+                "total_length": 339.200994436873
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 15.018479840523513,
+                "score_penalty": 0.15018479840523513,
+                "score_route": 100.0
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Completed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.chevrolet.impala and id=19029 at (x=63.434, y=-1.782, z=0.034)",
+                        "Agent collided against object with type=vehicle.tesla.model3 and id=18997 at (x=47.57, y=87.705, z=0.034)",
+                        "Agent collided against object with type=vehicle.tesla.model3 and id=18997 at (x=44.642, y=86.927, z=0.046)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 46.277 meters (13.09% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [
+                        "Agent ran a stop with id=18900 at (x=88.856, y=2.008, z=0.0)"
+                    ],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 234.80000349879265,
+                    "duration_system": 501.84905529022217,
+                    "route_length": 339.200994436873
+                },
+                "route_id": "RouteScenario_608",
+                "scores": {
+                    "score_composed": 15.018479840523513,
+                    "score_penalty": 0.15018479840523513,
+                    "score_route": 100.0
+                },
+                "status": "Completed"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "15.018",
+        "100.000",
+        "0.150",
+        "0.000",
+        "8.844",
+        "0.000",
+        "0.000",
+        "2.948",
+        "2.948",
+        "0.000",
+        "0.000",
+        "0.000"
+    ]
+}
