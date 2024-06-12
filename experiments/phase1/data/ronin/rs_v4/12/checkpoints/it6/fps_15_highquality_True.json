@@ -1,0 +1,109 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 5.87474273418016,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 2.93737136709008,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 112.46667253226042,
+                "duration_system": 324.9598593711853,
+                "total_length": 340.44043977682486
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 28.799999999999997,
+                "score_penalty": 0.288,
+                "score_route": 100.0
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Completed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.audi.a2 and id=16106 at (x=34.202, y=-80.702, z=0.033)",
+                        "Agent collided against object with type=vehicle.dodge_charger.police and id=16026 at (x=30.821, y=92.535, z=0.035)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [
+                        "Agent ran a stop with id=15911 at (x=99.997, y=-14.271, z=0.0)"
+                    ],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 112.46667253226042,
+                    "duration_system": 324.9598593711853,
+                    "route_length": 340.44043977682486
+                },
+                "route_id": "RouteScenario_607",
+                "scores": {
+                    "score_composed": 28.799999999999997,
+                    "score_penalty": 0.288,
+                    "score_route": 100.0
+                },
+                "status": "Completed"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "28.800",
+        "100.000",
+        "0.288",
+        "0.000",
+        "5.875",
+        "0.000",
+        "0.000",
+        "2.937",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000"
+    ]
+}

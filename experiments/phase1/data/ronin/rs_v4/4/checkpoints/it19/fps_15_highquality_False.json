@@ -1,0 +1,122 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 30.20240134049416,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 3.77530016756177
+            },
+            "meta": {
+                "duration_game": 1682.666754424572,
+                "duration_system": 4812.485131263733,
+                "exceptions": [
+                    [
+                        "RouteScenario_492",
+                        0,
+                        "Failed - Agent got blocked"
+                    ]
+                ],
+                "total_length": 572.826051955986
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 0.7766686125516157,
+                "score_penalty": 0.016796159999999997,
+                "score_route": 46.24084389239063
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.yamaha.yzf and id=34119 at (x=-288.842, y=430.399, z=0.033)",
+                        "Agent collided against object with type=vehicle.lincoln.mkz2017 and id=34102 at (x=-182.622, y=433.393, z=0.034)",
+                        "Agent collided against object with type=vehicle.harley-davidson.low_rider and id=34018 at (x=15.023, y=221.85, z=0.033)",
+                        "Agent collided against object with type=vehicle.volkswagen.t2 and id=34068 at (x=15.902, y=125.034, z=0.033)",
+                        "Agent collided against object with type=vehicle.bmw.isetta and id=34054 at (x=15.524, y=106.812, z=0.033)",
+                        "Agent collided against object with type=vehicle.bmw.isetta and id=34054 at (x=15.189, y=102.412, z=0.033)",
+                        "Agent collided against object with type=vehicle.bmw.isetta and id=34054 at (x=15.032, y=99.362, z=0.033)",
+                        "Agent collided against object with type=vehicle.bmw.isetta and id=34054 at (x=14.816, y=96.296, z=0.085)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=12.553, y=81.465, z=0.033)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 1682.666754424572,
+                    "duration_system": 4812.485131263733,
+                    "route_length": 572.826051955986
+                },
+                "route_id": "RouteScenario_492",
+                "scores": {
+                    "score_composed": 0.7766686125516157,
+                    "score_penalty": 0.016796159999999997,
+                    "score_route": 46.24084389239063
+                },
+                "status": "Failed - Agent got blocked"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "0.777",
+        "46.241",
+        "0.017",
+        "0.000",
+        "30.202",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "3.775"
+    ]
+}

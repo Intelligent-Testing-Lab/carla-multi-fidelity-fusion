@@ -1,0 +1,119 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 18.33003088112311,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 0.0,
+                "outside_route_lanes": 6.110010293707703,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 6.110010293707703
+            },
+            "meta": {
+                "duration_game": 311.9333496019244,
+                "duration_system": 893.230503320694,
+                "exceptions": [
+                    [
+                        "RouteScenario_432",
+                        0,
+                        "Failed - Agent got blocked"
+                    ]
+                ],
+                "total_length": 224.97184069118677
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 14.253298639010579,
+                "score_penalty": 0.19592302983526452,
+                "score_route": 72.74948050259839
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.fence and id=0 at (x=300.062, y=-175.712, z=0.341)",
+                        "Agent collided against object with type=static.fence and id=0 at (x=297.055, y=-175.859, z=0.343)",
+                        "Agent collided against object with type=static.fence and id=0 at (x=268.282, y=-178.903, z=0.37)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 94.085 meters (28.66% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=267.026, y=-179.606, z=0.369)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 311.9333496019244,
+                    "duration_system": 893.230503320694,
+                    "route_length": 224.97184069118677
+                },
+                "route_id": "RouteScenario_432",
+                "scores": {
+                    "score_composed": 14.253298639010579,
+                    "score_penalty": 0.19592302983526452,
+                    "score_route": 72.74948050259839
+                },
+                "status": "Failed - Agent got blocked"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "14.253",
+        "72.749",
+        "0.196",
+        "0.000",
+        "0.000",
+        "18.330",
+        "0.000",
+        "0.000",
+        "6.110",
+        "0.000",
+        "0.000",
+        "6.110"
+    ]
+}

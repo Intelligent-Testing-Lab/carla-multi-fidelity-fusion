@@ -1,0 +1,117 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 7.1247646705719045,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 2.3749215568573017
+            },
+            "meta": {
+                "duration_game": 696.6000103801489,
+                "duration_system": 1534.4156868457794,
+                "exceptions": [
+                    [
+                        "RouteScenario_135",
+                        0,
+                        "Failed - Agent got blocked"
+                    ]
+                ],
+                "total_length": 1016.3809710199303
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 8.948452891792238,
+                "score_penalty": 0.216,
+                "score_route": 41.42802264718629
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.jeep.wrangler_rubicon and id=15706 at (x=-11.902, y=-257.972, z=0.033)",
+                        "Agent collided against object with type=vehicle.jeep.wrangler_rubicon and id=15706 at (x=-12.235, y=-254.591, z=0.034)",
+                        "Agent collided against object with type=vehicle.citroen.c3 and id=15816 at (x=-12.284, y=-251.435, z=0.033)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=-12.495, y=-236.091, z=0.033)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 696.6000103801489,
+                    "duration_system": 1534.4156868457794,
+                    "route_length": 1016.3809710199303
+                },
+                "route_id": "RouteScenario_135",
+                "scores": {
+                    "score_composed": 8.948452891792238,
+                    "score_penalty": 0.216,
+                    "score_route": 41.42802264718629
+                },
+                "status": "Failed - Agent got blocked"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "8.948",
+        "41.428",
+        "0.216",
+        "0.000",
+        "7.125",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "2.375"
+    ]
+}

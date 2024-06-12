@@ -1,0 +1,119 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 71.88423969116089,
+                "outside_route_lanes": 23.961413230386963,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 23.961413230386963,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 184.10000274330378,
+                "duration_system": 382.15862822532654,
+                "exceptions": [
+                    [
+                        "RouteScenario_635",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 219.1457384709455
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 3.729076335142823,
+                "score_penalty": 0.19581534954896881,
+                "score_route": 19.043840759839252
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.dodge_charger.police and id=11262 at (x=-100.513, y=-140.038, z=0.089)",
+                        "Agent collided against object with type=vehicle.mercedes-benz.coupe and id=11276 at (x=-97.395, y=-140.691, z=0.092)",
+                        "Agent collided against object with type=vehicle.lincoln.mkz2017 and id=11269 at (x=-94.135, y=-141.625, z=0.089)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 4.0 meters (9.34% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 184.10000274330378,
+                    "duration_system": 382.15862822532654,
+                    "route_length": 219.1457384709455
+                },
+                "route_id": "RouteScenario_635",
+                "scores": {
+                    "score_composed": 3.729076335142823,
+                    "score_penalty": 0.19581534954896881,
+                    "score_route": 19.043840759839252
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "3.729",
+        "19.044",
+        "0.196",
+        "0.000",
+        "71.884",
+        "0.000",
+        "0.000",
+        "0.000",
+        "23.961",
+        "0.000",
+        "23.961",
+        "0.000"
+    ]
+}
