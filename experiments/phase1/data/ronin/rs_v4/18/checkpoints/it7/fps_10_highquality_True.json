@@ -1,0 +1,111 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 6.548490720908843,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 3.2742453604544215,
+                "outside_route_lanes": 3.2742453604544215,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 139.80000208318233,
+                "duration_system": 319.12176156044006,
+                "total_length": 305.41388622788287
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 21.847194256409807,
+                "score_penalty": 0.21847194256409808,
+                "score_route": 100.0
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Completed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.vegetation and id=0 at (x=22.357, y=-65.014, z=0.11)",
+                        "Agent collided against object with type=static.vegetation and id=0 at (x=22.166, y=-56.837, z=0.369)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.carlamotors.carlacola and id=59970 at (x=106.854, y=3.312, z=0.035)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 42.464 meters (13.82% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 139.80000208318233,
+                    "duration_system": 319.12176156044006,
+                    "route_length": 305.41388622788287
+                },
+                "route_id": "RouteScenario_551",
+                "scores": {
+                    "score_composed": 21.847194256409807,
+                    "score_penalty": 0.21847194256409808,
+                    "score_route": 100.0
+                },
+                "status": "Completed"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "21.847",
+        "100.000",
+        "0.218",
+        "0.000",
+        "3.274",
+        "6.548",
+        "0.000",
+        "0.000",
+        "3.274",
+        "0.000",
+        "0.000",
+        "0.000"
+    ]
+}

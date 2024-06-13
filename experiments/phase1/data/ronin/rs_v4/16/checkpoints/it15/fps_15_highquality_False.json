@@ -1,0 +1,111 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 3.8072167005409505,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 15.228866802163802,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 471.8666912764311,
+                "duration_system": 1385.8563539981842,
+                "total_length": 262.65907056404603
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 8.424,
+                "score_penalty": 0.08424,
+                "score_route": 100.0
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Completed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.guardrail and id=0 at (x=64.887, y=-170.118, z=0.217)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.lincoln.mkz2017 and id=47259 at (x=204.075, y=-303.645, z=0.056)",
+                        "Agent collided against object with type=vehicle.seat.leon and id=47174 at (x=200.158, y=-309.015, z=0.06)",
+                        "Agent collided against object with type=vehicle.seat.leon and id=47174 at (x=176.056, y=-170.638, z=0.229)",
+                        "Agent collided against object with type=vehicle.chevrolet.impala and id=47212 at (x=178.953, y=-169.753, z=0.231)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 471.8666912764311,
+                    "duration_system": 1385.8563539981842,
+                    "route_length": 262.65907056404603
+                },
+                "route_id": "RouteScenario_313",
+                "scores": {
+                    "score_composed": 8.424,
+                    "score_penalty": 0.08424,
+                    "score_route": 100.0
+                },
+                "status": "Completed"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "8.424",
+        "100.000",
+        "0.084",
+        "0.000",
+        "15.229",
+        "3.807",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000"
+    ]
+}
