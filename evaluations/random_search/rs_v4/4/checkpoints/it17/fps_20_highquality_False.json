@@ -1,0 +1,123 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 4.454853965592916,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 4.454853965592916,
+                "outside_route_lanes": 4.454853965592916,
+                "red_light": 4.454853965592916,
+                "route_dev": 0.0,
+                "route_timeout": 4.454853965592916,
+                "stop_infraction": 4.454853965592916,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 194.05000289157033,
+                "duration_system": 700.0737314224243,
+                "exceptions": [
+                    [
+                        "RouteScenario_372",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 232.76630671950159
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 19.860723532398442,
+                "score_penalty": 0.2059437676389554,
+                "score_route": 96.437604109568
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.pole and id=0 at (x=203.797, y=-360.395, z=0.033)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.audi.tt and id=33402 at (x=204.644, y=-338.055, z=0.053)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 13.0 meters (5.7% of the completed route)"
+                    ],
+                    "red_light": [
+                        "Agent ran a red light 33310 at (x=306.4, y=-255.3, z=0.3)"
+                    ],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [
+                        "Agent ran a stop with id=33205 at (x=267.718, y=-249.81, z=0.004)"
+                    ],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 194.05000289157033,
+                    "duration_system": 700.0737314224243,
+                    "route_length": 232.76630671950159
+                },
+                "route_id": "RouteScenario_372",
+                "scores": {
+                    "score_composed": 19.860723532398442,
+                    "score_penalty": 0.2059437676389554,
+                    "score_route": 96.437604109568
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "19.861",
+        "96.438",
+        "0.206",
+        "0.000",
+        "4.455",
+        "4.455",
+        "4.455",
+        "4.455",
+        "4.455",
+        "0.000",
+        "4.455",
+        "0.000"
+    ]
+}

@@ -1,0 +1,121 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 19.09305039550359,
+                "outside_route_lanes": 3.8186100791007176,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 3.8186100791007176
+            },
+            "meta": {
+                "duration_game": 1447.5000215694308,
+                "duration_system": 5027.459923028946,
+                "exceptions": [
+                    [
+                        "RouteScenario_492",
+                        0,
+                        "Failed - Agent got blocked"
+                    ]
+                ],
+                "total_length": 572.826051955986
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 3.551762770285314,
+                "score_penalty": 0.07769123523826489,
+                "score_route": 45.71638949223427
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.lincoln.mkz2017 and id=327 at (x=-188.263, y=430.442, z=0.034)",
+                        "Agent collided against object with type=vehicle.lincoln.mkz2017 and id=327 at (x=-151.294, y=425.002, z=0.034)",
+                        "Agent collided against object with type=vehicle.seat.leon and id=262 at (x=14.666, y=118.489, z=0.033)",
+                        "Agent collided against object with type=vehicle.harley-davidson.low_rider and id=386 at (x=14.006, y=115.483, z=0.034)",
+                        "Agent collided against object with type=vehicle.harley-davidson.low_rider and id=386 at (x=13.194, y=112.428, z=0.033)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 1.079 meters (0.09% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=14.827, y=96.04, z=0.033)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 1447.5000215694308,
+                    "duration_system": 5027.459923028946,
+                    "route_length": 572.826051955986
+                },
+                "route_id": "RouteScenario_492",
+                "scores": {
+                    "score_composed": 3.551762770285314,
+                    "score_penalty": 0.07769123523826489,
+                    "score_route": 45.71638949223427
+                },
+                "status": "Failed - Agent got blocked"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "3.552",
+        "45.716",
+        "0.078",
+        "0.000",
+        "19.093",
+        "0.000",
+        "0.000",
+        "0.000",
+        "3.819",
+        "0.000",
+        "0.000",
+        "3.819"
+    ]
+}

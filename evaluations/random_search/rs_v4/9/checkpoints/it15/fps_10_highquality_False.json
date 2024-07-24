@@ -1,0 +1,119 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 7.6772526356166075,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 0.0,
+                "outside_route_lanes": 2.5590842118722024,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 2.5590842118722024
+            },
+            "meta": {
+                "duration_game": 295.60000440478325,
+                "duration_system": 700.9106554985046,
+                "exceptions": [
+                    [
+                        "RouteScenario_303",
+                        0,
+                        "Failed - Agent got blocked"
+                    ]
+                ],
+                "total_length": 654.6885658252348
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 13.375200721368005,
+                "score_penalty": 0.2240885372135895,
+                "score_route": 59.68712584624291
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.pole and id=0 at (x=125.217, y=118.112, z=5.83)",
+                        "Agent collided against object with type=static.pole and id=0 at (x=98.863, y=143.376, z=2.532)",
+                        "Agent collided against object with type=static.pole and id=0 at (x=38.121, y=140.412, z=0.041)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 73.497 meters (18.4% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=37.704, y=138.837, z=0.037)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 295.60000440478325,
+                    "duration_system": 700.9106554985046,
+                    "route_length": 654.6885658252348
+                },
+                "route_id": "RouteScenario_303",
+                "scores": {
+                    "score_composed": 13.375200721368005,
+                    "score_penalty": 0.2240885372135895,
+                    "score_route": 59.68712584624291
+                },
+                "status": "Failed - Agent got blocked"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "13.375",
+        "59.687",
+        "0.224",
+        "0.000",
+        "0.000",
+        "7.677",
+        "0.000",
+        "0.000",
+        "2.559",
+        "0.000",
+        "0.000",
+        "2.559"
+    ]
+}

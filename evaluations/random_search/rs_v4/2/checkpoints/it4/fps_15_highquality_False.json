@@ -1,0 +1,108 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 0.0,
+                "outside_route_lanes": 0.0,
+                "red_light": 4.520536073447777,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 4.520536073447777,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 69.00000359863043,
+                "duration_system": 203.1069848537445,
+                "total_length": 221.2127021557662
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 55.99999999999999,
+                "score_penalty": 0.5599999999999999,
+                "score_route": 100.0
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Completed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [],
+                    "outside_route_lanes": [],
+                    "red_light": [
+                        "Agent ran a red light 15507 at (x=319.7, y=-163.3, z=0.3)"
+                    ],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [
+                        "Agent ran a stop with id=15406 at (x=198.99, y=-180.398, z=0.02)"
+                    ],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 69.00000359863043,
+                    "duration_system": 203.1069848537445,
+                    "route_length": 221.2127021557662
+                },
+                "route_id": "RouteScenario_201",
+                "scores": {
+                    "score_composed": 55.99999999999999,
+                    "score_penalty": 0.5599999999999999,
+                    "score_route": 100.0
+                },
+                "status": "Completed"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "56.000",
+        "100.000",
+        "0.560",
+        "0.000",
+        "0.000",
+        "0.000",
+        "4.521",
+        "4.521",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000"
+    ]
+}

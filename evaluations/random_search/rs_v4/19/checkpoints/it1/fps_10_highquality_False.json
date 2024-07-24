@@ -1,0 +1,119 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 30.306523326198963,
+                "outside_route_lanes": 10.102174442066321,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 10.102174442066321,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 301.10000448673964,
+                "duration_system": 670.2402875423431,
+                "exceptions": [
+                    [
+                        "RouteScenario_0",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 350.8312522097614
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 5.6870417689084345,
+                "score_penalty": 0.2015577747945207,
+                "score_route": 28.21544232022865
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.toyota.prius and id=65071 at (x=28.048, y=107.69, z=0.254)",
+                        "Agent collided against object with type=vehicle.nissan.micra and id=65056 at (x=33.15, y=106.437, z=0.253)",
+                        "Agent collided against object with type=vehicle.nissan.micra and id=65056 at (x=30.207, y=107.02, z=0.253)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 7.0 meters (6.69% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 301.10000448673964,
+                    "duration_system": 670.2402875423431,
+                    "route_length": 350.8312522097614
+                },
+                "route_id": "RouteScenario_0",
+                "scores": {
+                    "score_composed": 5.6870417689084345,
+                    "score_penalty": 0.2015577747945207,
+                    "score_route": 28.21544232022865
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "5.687",
+        "28.215",
+        "0.202",
+        "0.000",
+        "30.307",
+        "0.000",
+        "0.000",
+        "0.000",
+        "10.102",
+        "0.000",
+        "10.102",
+        "0.000"
+    ]
+}

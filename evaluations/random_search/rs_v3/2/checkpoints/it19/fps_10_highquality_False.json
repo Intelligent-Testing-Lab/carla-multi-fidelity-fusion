@@ -1,0 +1,121 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 48.595931892878255,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 0.0,
+                "outside_route_lanes": 9.719186378575651,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 9.719186378575651
+            },
+            "meta": {
+                "duration_game": 285.60000425577164,
+                "duration_system": 726.6345436573029,
+                "exceptions": [
+                    [
+                        "RouteScenario_181",
+                        0,
+                        "Failed - Agent got blocked"
+                    ]
+                ],
+                "total_length": 240.8399190773356
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 4.295373228700818,
+                "score_penalty": 0.10054472463446643,
+                "score_route": 42.72102036498469
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.vegetation and id=0 at (x=295.909, y=-308.328, z=0.039)",
+                        "Agent collided against object with type=static.vegetation and id=0 at (x=190.438, y=-300.367, z=0.219)",
+                        "Agent collided against object with type=static.pole and id=0 at (x=188.237, y=-298.3, z=0.214)",
+                        "Agent collided against object with type=static.vegetation and id=0 at (x=186.415, y=-294.813, z=0.216)",
+                        "Agent collided against object with type=static.fence and id=0 at (x=190.086, y=-276.437, z=0.209)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 27.062 meters (13.35% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=191.056, y=-275.898, z=0.208)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 285.60000425577164,
+                    "duration_system": 726.6345436573029,
+                    "route_length": 240.8399190773356
+                },
+                "route_id": "RouteScenario_181",
+                "scores": {
+                    "score_composed": 4.295373228700818,
+                    "score_penalty": 0.10054472463446643,
+                    "score_route": 42.72102036498469
+                },
+                "status": "Failed - Agent got blocked"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "4.295",
+        "42.721",
+        "0.101",
+        "0.000",
+        "0.000",
+        "48.596",
+        "0.000",
+        "0.000",
+        "9.719",
+        "0.000",
+        "0.000",
+        "9.719"
+    ]
+}

@@ -1,0 +1,115 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 3.16206060654831,
+                "outside_route_lanes": 3.16206060654831,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 97.45000145211816,
+                "duration_system": 316.1764211654663,
+                "exceptions": [
+                    [
+                        "RouteScenario_651",
+                        0,
+                        "Completed"
+                    ]
+                ],
+                "total_length": 316.249472868768
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 42.51841719528598,
+                "score_penalty": 0.4251841719528598,
+                "score_route": 100.0
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.lincoln.mkz2017 and id=1520 at (x=-205.336, y=-90.522, z=0.033)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 94.737 meters (29.14% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 97.45000145211816,
+                    "duration_system": 316.1764211654663,
+                    "route_length": 316.249472868768
+                },
+                "route_id": "RouteScenario_651",
+                "scores": {
+                    "score_composed": 42.51841719528598,
+                    "score_penalty": 0.4251841719528598,
+                    "score_route": 100.0
+                },
+                "status": "Completed"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "42.518",
+        "100.000",
+        "0.425",
+        "0.000",
+        "3.162",
+        "0.000",
+        "0.000",
+        "0.000",
+        "3.162",
+        "0.000",
+        "0.000",
+        "0.000"
+    ]
+}

@@ -1,0 +1,121 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 6.126928870075409,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 6.126928870075409,
+                "outside_route_lanes": 6.126928870075409,
+                "red_light": 6.126928870075409,
+                "route_dev": 0.0,
+                "route_timeout": 6.126928870075409,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 206.10000307112932,
+                "duration_system": 478.9774465560913,
+                "exceptions": [
+                    [
+                        "RouteScenario_27",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 242.5970947017567
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 15.968703299229967,
+                "score_penalty": 0.2373548365510114,
+                "score_route": 67.27776661841072
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.pole and id=0 at (x=196.543, y=198.363, z=0.333)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.mini.cooperst and id=3757 at (x=128.711, y=191.513, z=0.254)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 22.082 meters (13.06% of the completed route)"
+                    ],
+                    "red_light": [
+                        "Agent ran a red light 3598 at (x=48.52, y=203.28, z=0.22)"
+                    ],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 206.10000307112932,
+                    "duration_system": 478.9774465560913,
+                    "route_length": 242.5970947017567
+                },
+                "route_id": "RouteScenario_27",
+                "scores": {
+                    "score_composed": 15.968703299229967,
+                    "score_penalty": 0.2373548365510114,
+                    "score_route": 67.27776661841072
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "15.969",
+        "67.278",
+        "0.237",
+        "0.000",
+        "6.127",
+        "6.127",
+        "6.127",
+        "0.000",
+        "6.127",
+        "0.000",
+        "6.127",
+        "0.000"
+    ]
+}

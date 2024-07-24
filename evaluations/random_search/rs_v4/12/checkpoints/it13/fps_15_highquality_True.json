@@ -1,0 +1,117 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 8.921484588724287,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 2.973828196241429,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 448.06669003516436,
+                "duration_system": 1235.1414761543274,
+                "exceptions": [
+                    [
+                        "RouteScenario_293",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 524.7623189991982
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 13.84124747381643,
+                "score_penalty": 0.216,
+                "score_route": 64.07984941581681
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.carlamotors.carlacola and id=18006 at (x=-13.051, y=52.143, z=0.033)",
+                        "Agent collided against object with type=vehicle.toyota.prius and id=18050 at (x=-13.536, y=55.167, z=0.029)",
+                        "Agent collided against object with type=vehicle.carlamotors.carlacola and id=18015 at (x=-13.973, y=59.069, z=0.033)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 448.06669003516436,
+                    "duration_system": 1235.1414761543274,
+                    "route_length": 524.7623189991982
+                },
+                "route_id": "RouteScenario_293",
+                "scores": {
+                    "score_composed": 13.84124747381643,
+                    "score_penalty": 0.216,
+                    "score_route": 64.07984941581681
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "13.841",
+        "64.080",
+        "0.216",
+        "0.000",
+        "8.921",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "2.974",
+        "0.000"
+    ]
+}

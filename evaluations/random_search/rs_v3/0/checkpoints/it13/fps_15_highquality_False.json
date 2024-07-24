@@ -1,0 +1,117 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 7.668890055007141,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 2.5562966850023807,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 369.0666859149933,
+                "duration_system": 1086.4525091648102,
+                "exceptions": [
+                    [
+                        "RouteScenario_385",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 456.20679039405206
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 18.52169588559621,
+                "score_penalty": 0.216,
+                "score_route": 85.7485920629454
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.volkswagen.t2 and id=3885 at (x=-13.3, y=-244.925, z=0.034)",
+                        "Agent collided against object with type=vehicle.audi.a2 and id=3997 at (x=-11.363, y=-238.772, z=0.033)",
+                        "Agent collided against object with type=vehicle.audi.a2 and id=3997 at (x=-12.401, y=-197.162, z=0.034)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 369.0666859149933,
+                    "duration_system": 1086.4525091648102,
+                    "route_length": 456.20679039405206
+                },
+                "route_id": "RouteScenario_385",
+                "scores": {
+                    "score_composed": 18.52169588559621,
+                    "score_penalty": 0.216,
+                    "score_route": 85.7485920629454
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "18.522",
+        "85.749",
+        "0.216",
+        "0.000",
+        "7.669",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "2.556",
+        "0.000"
+    ]
+}

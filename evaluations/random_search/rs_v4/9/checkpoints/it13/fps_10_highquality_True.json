@@ -1,0 +1,117 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 16.16084826192768,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 5.38694942064256,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 307.1000045761466,
+                "duration_system": 763.273592710495,
+                "exceptions": [
+                    [
+                        "RouteScenario_2",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 367.771837564872
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 10.90265786025222,
+                "score_penalty": 0.216,
+                "score_route": 50.47526787153805
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.nissan.micra and id=67874 at (x=189.863, y=112.454, z=0.254)",
+                        "Agent collided against object with type=vehicle.nissan.patrol and id=67845 at (x=192.513, y=120.701, z=0.254)",
+                        "Agent collided against object with type=vehicle.tesla.model3 and id=67857 at (x=192.884, y=126.129, z=0.254)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 307.1000045761466,
+                    "duration_system": 763.273592710495,
+                    "route_length": 367.771837564872
+                },
+                "route_id": "RouteScenario_2",
+                "scores": {
+                    "score_composed": 10.90265786025222,
+                    "score_penalty": 0.216,
+                    "score_route": 50.47526787153805
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "10.903",
+        "50.475",
+        "0.216",
+        "0.000",
+        "16.161",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "5.387",
+        "0.000"
+    ]
+}

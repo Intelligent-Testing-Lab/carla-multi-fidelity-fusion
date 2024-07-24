@@ -1,0 +1,118 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 5.627724219812927,
+                "outside_route_lanes": 2.8138621099064633,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 2.8138621099064633,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 95.30000142008066,
+                "duration_system": 305.3574707508087,
+                "exceptions": [
+                    [
+                        "RouteScenario_650",
+                        0,
+                        "Completed"
+                    ]
+                ],
+                "total_length": 355.38344131342006
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 21.300278233055867,
+                "score_penalty": 0.21300278233055867,
+                "score_route": 100.0
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.audi.tt and id=4446 at (x=-122.513, y=-76.937, z=0.033)",
+                        "Agent collided against object with type=vehicle.lincoln.mkz2017 and id=4426 at (x=-207.095, y=-90.106, z=0.033)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 94.737 meters (26.04% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [
+                        "Agent ran a stop with id=4232 at (x=-174.338, y=-91.53, z=0.0)"
+                    ],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 95.30000142008066,
+                    "duration_system": 305.3574707508087,
+                    "route_length": 355.38344131342006
+                },
+                "route_id": "RouteScenario_650",
+                "scores": {
+                    "score_composed": 21.300278233055867,
+                    "score_penalty": 0.21300278233055867,
+                    "score_route": 100.0
+                },
+                "status": "Completed"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "21.300",
+        "100.000",
+        "0.213",
+        "0.000",
+        "5.628",
+        "0.000",
+        "0.000",
+        "2.814",
+        "2.814",
+        "0.000",
+        "0.000",
+        "0.000"
+    ]
+}

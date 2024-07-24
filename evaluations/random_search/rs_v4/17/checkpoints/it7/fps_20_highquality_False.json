@@ -1,0 +1,111 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 10.386173588251191,
+                "outside_route_lanes": 5.193086794125596,
+                "red_light": 5.193086794125596,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 69.40000103414059,
+                "duration_system": 248.22143483161926,
+                "total_length": 192.5636985561645
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 21.730938510540696,
+                "score_penalty": 0.21730938510540695,
+                "score_route": 100.0
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Completed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.chevrolet.impala and id=51694 at (x=193.029, y=-247.774, z=0.072)",
+                        "Agent collided against object with type=vehicle.chevrolet.impala and id=51694 at (x=199.379, y=-242.505, z=0.06)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 28.221 meters (13.77% of the completed route)"
+                    ],
+                    "red_light": [
+                        "Agent ran a red light 51597 at (x=53.45, y=-167.05, z=0.3)"
+                    ],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 69.40000103414059,
+                    "duration_system": 248.22143483161926,
+                    "route_length": 192.5636985561645
+                },
+                "route_id": "RouteScenario_335",
+                "scores": {
+                    "score_composed": 21.730938510540696,
+                    "score_penalty": 0.21730938510540695,
+                    "score_route": 100.0
+                },
+                "status": "Completed"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "21.731",
+        "100.000",
+        "0.217",
+        "0.000",
+        "10.386",
+        "0.000",
+        "5.193",
+        "0.000",
+        "5.193",
+        "0.000",
+        "0.000",
+        "0.000"
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 51.969545217943136,
+                "outside_route_lanes": 17.32318173931438,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 17.32318173931438,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 275.10000409930944,
+                "duration_system": 585.4050385951996,
+                "exceptions": [
+                    [
+                        "RouteScenario_35",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 332.9847188283532
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 3.4801641196902224,
+                "score_penalty": 0.2007482140696263,
+                "score_route": 17.3359655318437
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.mustang.mustang and id=3767 at (x=188.273, y=301.095, z=0.254)",
+                        "Agent collided against object with type=vehicle.nissan.patrol and id=3726 at (x=183.865, y=304.403, z=0.253)",
+                        "Agent collided against object with type=vehicle.bmw.grandtourer and id=3740 at (x=180.389, y=305.084, z=0.254)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 4.136 meters (7.06% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 275.10000409930944,
+                    "duration_system": 585.4050385951996,
+                    "route_length": 332.9847188283532
+                },
+                "route_id": "RouteScenario_35",
+                "scores": {
+                    "score_composed": 3.4801641196902224,
+                    "score_penalty": 0.2007482140696263,
+                    "score_route": 17.3359655318437
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "3.480",
+        "17.336",
+        "0.201",
+        "0.000",
+        "51.970",
+        "0.000",
+        "0.000",
+        "0.000",
+        "17.323",
+        "0.000",
+        "17.323",
+        "0.000"
+    ]
+}

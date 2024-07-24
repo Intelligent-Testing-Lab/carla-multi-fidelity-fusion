@@ -1,0 +1,118 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 7.283474093695795,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 1.8208685234239488,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 668.0500099547207,
+                "duration_system": 2439.9435267448425,
+                "exceptions": [
+                    [
+                        "RouteScenario_153",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 820.1289915994316
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 8.678491621603204,
+                "score_penalty": 0.1296,
+                "score_route": 66.96366991977781
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.citroen.c3 and id=31695 at (x=15.922, y=109.145, z=0.033)",
+                        "Agent collided against object with type=vehicle.audi.tt and id=31641 at (x=14.997, y=104.224, z=0.033)",
+                        "Agent collided against object with type=vehicle.citroen.c3 and id=31695 at (x=14.298, y=99.722, z=0.034)",
+                        "Agent collided against object with type=vehicle.audi.tt and id=31641 at (x=14.525, y=96.632, z=0.049)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 668.0500099547207,
+                    "duration_system": 2439.9435267448425,
+                    "route_length": 820.1289915994316
+                },
+                "route_id": "RouteScenario_153",
+                "scores": {
+                    "score_composed": 8.678491621603204,
+                    "score_penalty": 0.1296,
+                    "score_route": 66.96366991977781
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "8.678",
+        "66.964",
+        "0.130",
+        "0.000",
+        "7.283",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "1.821",
+        "0.000"
+    ]
+}
