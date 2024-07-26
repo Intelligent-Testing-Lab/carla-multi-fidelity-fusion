@@ -61,6 +61,7 @@ def transform_scenario_df(df: pd.DataFrame) -> pd.DataFrame:
     # set route's id to be df's index
     df = df.rename(columns={"id": "route_index"})
     df = df.set_index('route_index')
+    df.index = pd.to_numeric(df.index)
 
     # count points
     df['n_points'] = df['points'].apply(len)

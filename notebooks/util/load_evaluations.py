@@ -35,6 +35,17 @@ def extract_evaluation_file(file_path: Path) -> pd.DataFrame:
     return df
 
 
+def calculate_dscore_error(df: pd.DataFrame) -> pd.DataFrame:
+    oracle_df = df.xs((20, "True"), level=[
+                      'fps', 'highquality'], drop_level=False).sort_index()
+
+    oracle_dscore_vec = oracle_df.groupby(
+        'route_index')['driving_score'].mean()
+    df['driving_score_error'] = (df['driving_score'] - oracle_dscore_vec).abs()
+
+    return df
+
+
 def transform_evaluation_df(df: pd.DataFrame) -> pd.DataFrame:
 
     df = df.reset_index(drop=True)
@@ -54,8 +65,13 @@ def transform_evaluation_df(df: pd.DataFrame) -> pd.DataFrame:
     df['driving_score'] = df['score_composed'] / 100
     df = df.rename(columns={"index": "route_index"})
 
+    df['fps'] = pd.to_numeric(df['fps'])
+
     df = df.set_index(['rep', 'fps', 'highquality', 'route_index'])
     df = df.sort_index()
+
+    df = calculate_dscore_error(df)
+
     return df
 
 
