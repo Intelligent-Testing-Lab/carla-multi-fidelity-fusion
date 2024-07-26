@@ -6,7 +6,7 @@ import pandas as pd
 from shapely import LineString
 from numpy.linalg import norm
 
-DEFAULT_SCENARIO_PATH = "../data/definition/routes_devtest_sliced.xml"
+DEFAULT_SCENARIO_PATH = "data/definition/routes_devtest_sliced.xml"
 
 
 def get_turn_angles(polyline: LineString) -> float:
@@ -54,7 +54,7 @@ def get_route_data(route: ET.Element):
     return ret
 
 
-def transform_route_df(df: pd.DataFrame) -> pd.DataFrame:
+def transform_scenario_df(df: pd.DataFrame) -> pd.DataFrame:
     # drop duplicate routes
     df = df.drop_duplicates('points')
 
@@ -83,7 +83,7 @@ def transform_route_df(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def parse_scenario_definition(xml_file: str = DEFAULT_SCENARIO_PATH) -> pd.DataFrame:
+def load_scenario_df(xml_file: str = DEFAULT_SCENARIO_PATH) -> pd.DataFrame:
     xml_file = Path(xml_file)
     if not xml_file.exists():
         raise FileNotFoundError(xml_file)
@@ -94,9 +94,9 @@ def parse_scenario_definition(xml_file: str = DEFAULT_SCENARIO_PATH) -> pd.DataF
     routes = tree.getroot()
     df = pd.DataFrame([get_route_data(route) for route in routes])
 
-    return transform_route_df(df)
+    return transform_scenario_df(df)
 
 
 if __name__ == "__main__":
-    df = parse_scenario_definition()
+    df = load_scenario_df()
     print(df)
