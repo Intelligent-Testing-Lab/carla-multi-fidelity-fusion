@@ -67,7 +67,7 @@ def transform_evaluation_df(df: pd.DataFrame) -> pd.DataFrame:
 
     df['fps'] = pd.to_numeric(df['fps'])
 
-    df = df.set_index(['rep', 'fps', 'highquality', 'route_index'])
+    df = df.set_index(['fps', 'highquality', 'rep', 'route_index'])
     df = df.sort_index()
 
     df = calculate_dscore_error(df)
