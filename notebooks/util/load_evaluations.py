@@ -52,7 +52,7 @@ def _calculate_benchmark_dscore_error(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def _transform_benchmark_df(df: pd.DataFrame) -> pd.DataFrame:
+def _transform_df(df: pd.DataFrame) -> pd.DataFrame:
 
     df = df.reset_index(drop=True)
     # unpack records
@@ -63,8 +63,6 @@ def _transform_benchmark_df(df: pd.DataFrame) -> pd.DataFrame:
     # drop original column
     df = df.drop('records', axis=1)
 
-    # drop infractions columns
-
     # remove prefixes from column name
     df.columns = df.columns.str.removeprefix('meta.')
     df.columns = df.columns.str.removeprefix('scores.')
@@ -72,11 +70,6 @@ def _transform_benchmark_df(df: pd.DataFrame) -> pd.DataFrame:
     df = df.rename(columns={"index": "route_index"})
 
     df['fps'] = pd.to_numeric(df['fps'])
-
-    df = df.set_index(['fps', 'highquality', 'rep', 'route_index'])
-    df = df.sort_index()
-
-    df = _calculate_benchmark_dscore_error(df)
 
     return df
 
@@ -92,7 +85,11 @@ def load_benchmark_df(eval_dir_path: Path | str = DEFAULT_BENCHMARKING_DIR) -> p
         file_dfs.append(_read_benchmark_file(file_path))
 
     df = pd.concat(file_dfs)
-    df = _transform_benchmark_df(df)
+    df = _transform_df(df)
+    df = df.set_index(['fps', 'highquality', 'rep', 'route_index'])
+    df = df.sort_index()
+
+    df = _calculate_benchmark_dscore_error(df)
     return df
 
 
@@ -114,7 +111,8 @@ def _read_rs_file(file_path: Path):
         case _:
             return None
 
-    data['records'] = _read_file_records(file_path)
+    # there is only one so take that
+    data['records'] = _read_file_records(file_path)[0]
     return data
 
 
@@ -131,11 +129,12 @@ def load_rs_df(rs_dir_path: Path = DEFAULT_RANDOMSEARCH_DIR) -> pd.DataFrame:
             file_data_list.append(file_data)
 
     df = pd.DataFrame(file_data_list)
+    df = _transform_df(df)
     return df
 
 
 if __name__ == "__main__":
-    # pass
+
     df = load_benchmark_df()
     print(df)
     df = load_rs_df()
