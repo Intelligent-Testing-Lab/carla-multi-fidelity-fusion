@@ -8,7 +8,9 @@ import numpy as np
 import seaborn as sns
 from itertools import batched
 
-DEFAULT_DIR = "data/evaluation/benchmarking/default"
+DEFAULT_DIR = Path("data/evaluation")
+DEFAULT_BENCHMARKING_DIR = DEFAULT_DIR / "benchmarking" / "default"
+DEFAULT_RANDOMSEARCH_DIR = DEFAULT_DIR / "random_search"
 
 
 def extract_evaluation_file(file_path: Path) -> pd.DataFrame:
@@ -75,14 +77,14 @@ def transform_evaluation_df(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def load_evaluation_df(eval_dir: str = DEFAULT_DIR) -> pd.DataFrame:
-    eval_dir_path = Path(eval_dir)
+def load_benchmark_df(eval_dir_path: Path | str = DEFAULT_BENCHMARKING_DIR) -> pd.DataFrame:
+    eval_dir_path = Path(eval_dir_path)
 
     if not eval_dir_path.exists():
         raise FileNotFoundError
 
     file_dfs = []
-    for file_path in eval_dir_path.glob("./rep*/*/*.json"):
+    for file_path in eval_dir_path.glob("./rep*/**/*.json"):
         file_dfs.append(extract_evaluation_file(file_path))
 
     df = pd.concat(file_dfs)
@@ -90,6 +92,12 @@ def load_evaluation_df(eval_dir: str = DEFAULT_DIR) -> pd.DataFrame:
     return df
 
 
+def load_rs_df(rs_dir_path: Path = DEFAULT_RANDOMSEARCH_DIR) -> pd.DataFrame:
+    pass
+
+
 if __name__ == "__main__":
-    df = load_evaluation_df()
+    # pass
+    df = load_benchmark_df()
     print(df)
+    df = load_rs_df("")
