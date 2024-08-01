@@ -11,6 +11,7 @@ from itertools import batched
 DEFAULT_DIR = Path("data/evaluation")
 DEFAULT_BENCHMARKING_DIR = DEFAULT_DIR / "benchmarking" / "default"
 DEFAULT_RANDOMSEARCH_DIR = DEFAULT_DIR / "random_search"
+DEFAULT_RS_VERIFICATION_DIR = DEFAULT_RANDOMSEARCH_DIR / "rs_v3" / "verification"
 
 
 def _read_file_records(file_path: Path) -> list:
@@ -69,8 +70,6 @@ def _transform_df(df: pd.DataFrame) -> pd.DataFrame:
     df['driving_score'] = df['score_composed'] / 100
     df = df.rename(columns={"index": "route_index"})
 
-    df['fps'] = pd.to_numeric(df['fps'])
-
     return df
 
 
@@ -86,6 +85,7 @@ def load_benchmark_df(eval_dir_path: Path | str = DEFAULT_BENCHMARKING_DIR) -> p
 
     df = pd.concat(file_dfs)
     df = _transform_df(df)
+    df['fps'] = pd.to_numeric(df['fps'])
     df = df.set_index(['fps', 'highquality', 'rep', 'route_index'])
     df = df.sort_index()
 
@@ -116,14 +116,14 @@ def _read_rs_file(file_path: Path):
     return data
 
 
-def load_rs_df(rs_dir_path: Path = DEFAULT_RANDOMSEARCH_DIR) -> pd.DataFrame:
-    rs_dir_path = Path(rs_dir_path)
+def load_rs_df(dir_path: Path = DEFAULT_RANDOMSEARCH_DIR) -> pd.DataFrame:
+    dir_path = Path(dir_path)
 
-    if not rs_dir_path.exists():
+    if not dir_path.exists():
         raise FileNotFoundError
 
     file_data_list = []
-    for file_path in rs_dir_path.glob("./**/*.json"):
+    for file_path in dir_path.glob("./**/*.json"):
         file_data = _read_rs_file(file_path)
         if file_data:
             file_data_list.append(file_data)
@@ -134,9 +134,41 @@ def load_rs_df(rs_dir_path: Path = DEFAULT_RANDOMSEARCH_DIR) -> pd.DataFrame:
     return df
 
 
+def _read_ver_file(file_path: Path) -> pd.DataFrame:
+    # DATA FROM PATH
+    data = {}
+    data['path'] = file_path
+
+    # READ CHECKPOINT
+    with open(file_path, "r") as f:
+        content = json.load(f)
+
+    data['records'] = content['_checkpoint']['records']
+    if not data['records']:
+        return
+
+    df = pd.DataFrame(data)
+    return _transform_df(df)
+
+
+def load_ver_df(dir_path: Path = DEFAULT_RS_VERIFICATION_DIR) -> pd.DataFrame:
+    dir_path = Path(dir_path)
+
+    if not dir_path.exists():
+        raise FileNotFoundError
+
+    dfs = []
+
+    for file_path in dir_path.glob("./**/*.json"):
+        dfs.append(_read_ver_file(file_path))
+
+    df = pd.concat(dfs).rename(
+        columns={"driving_score": "oracle_dscore"}).set_index('route_id').sort_index()
+    return df
+
+
 if __name__ == "__main__":
 
-    df = load_benchmark_df()
-    print(df)
-    df = load_rs_df()
-    print(f'{df}')
+    print(load_benchmark_df())
+    print(load_rs_df())
+    print(load_ver_df())
