@@ -41,7 +41,7 @@ def _read_benchmark_file(file_path: Path) -> pd.DataFrame:
     return df
 
 
-def calculate_dscore_error(df: pd.DataFrame) -> pd.DataFrame:
+def _calculate_benchmark_dscore_error(df: pd.DataFrame) -> pd.DataFrame:
     oracle_df = df.xs((20, "True"), level=[
                       'fps', 'highquality'], drop_level=False).sort_index()
 
@@ -76,7 +76,7 @@ def _transform_benchmark_df(df: pd.DataFrame) -> pd.DataFrame:
     df = df.set_index(['fps', 'highquality', 'rep', 'route_index'])
     df = df.sort_index()
 
-    df = calculate_dscore_error(df)
+    df = _calculate_benchmark_dscore_error(df)
 
     return df
 
@@ -96,7 +96,7 @@ def load_benchmark_df(eval_dir_path: Path | str = DEFAULT_BENCHMARKING_DIR) -> p
     return df
 
 
-def read_rs_file(file_path: Path):
+def _read_rs_file(file_path: Path):
     data = {}
 
     # extract data from path
@@ -124,14 +124,13 @@ def load_rs_df(rs_dir_path: Path = DEFAULT_RANDOMSEARCH_DIR) -> pd.DataFrame:
     if not rs_dir_path.exists():
         raise FileNotFoundError
 
-    file_dics = []
+    file_data_list = []
     for file_path in rs_dir_path.glob("./**/*.json"):
-        file_data = read_rs_file(file_path)
+        file_data = _read_rs_file(file_path)
         if file_data:
-            file_dics.append(file_data)
+            file_data_list.append(file_data)
 
-    print(len(file_dics))
-    df = pd.DataFrame(file_dics)
+    df = pd.DataFrame(file_data_list)
     return df
 
 
