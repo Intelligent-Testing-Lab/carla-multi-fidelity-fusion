@@ -103,7 +103,7 @@ def _read_rs_file(file_path: Path):
             data['rep'] = int(rep)
             data['it'] = int(it[2:])
             if "4" in batch:
-                data['it'] += 10
+                data['rep'] += 10
 
             stem_params = dict(batched(file_path.stem.split("_"), n=2))
             data.update(stem_params)
@@ -130,6 +130,7 @@ def load_rs_df(rs_dir_path: Path = DEFAULT_RANDOMSEARCH_DIR) -> pd.DataFrame:
 
     df = pd.DataFrame(file_data_list)
     df = _transform_df(df)
+    df = df.set_index(['fps', 'highquality', 'rep', 'it',]).sort_index()
     return df
 
 
