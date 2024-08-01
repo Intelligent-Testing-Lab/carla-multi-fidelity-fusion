@@ -13,7 +13,15 @@ DEFAULT_BENCHMARKING_DIR = DEFAULT_DIR / "benchmarking" / "default"
 DEFAULT_RANDOMSEARCH_DIR = DEFAULT_DIR / "random_search"
 
 
-def extract_evaluation_file(file_path: Path) -> pd.DataFrame:
+def _read_file_records(file_path: Path) -> list:
+    # extract data from file
+    with open(file_path, "r") as f:
+        content = json.load(f)
+
+    return content['_checkpoint']['records']
+
+
+def _read_benchmark_file(file_path: Path) -> pd.DataFrame:
 
     data = {}
 
@@ -28,11 +36,7 @@ def extract_evaluation_file(file_path: Path) -> pd.DataFrame:
         case _:
             print(f"File path didn't match the pattern")
 
-    # extract data from file
-    with open(file_path, "r") as f:
-        content = json.load(f)
-
-    data['records'] = content['_checkpoint']['records']
+    data['records'] = _read_file_records(file_path)
     df = pd.DataFrame(data)
     return df
 
@@ -48,7 +52,7 @@ def calculate_dscore_error(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def transform_evaluation_df(df: pd.DataFrame) -> pd.DataFrame:
+def _transform_benchmark_df(df: pd.DataFrame) -> pd.DataFrame:
 
     df = df.reset_index(drop=True)
     # unpack records
@@ -85,19 +89,55 @@ def load_benchmark_df(eval_dir_path: Path | str = DEFAULT_BENCHMARKING_DIR) -> p
 
     file_dfs = []
     for file_path in eval_dir_path.glob("./rep*/**/*.json"):
-        file_dfs.append(extract_evaluation_file(file_path))
+        file_dfs.append(_read_benchmark_file(file_path))
 
     df = pd.concat(file_dfs)
-    df = transform_evaluation_df(df)
+    df = _transform_benchmark_df(df)
     return df
 
 
+def read_rs_file(file_path: Path):
+    data = {}
+
+    # extract data from path
+    match file_path.parts:
+        case [*_, ("rs_v3" | "rs_v4") as batch, rep, _, it, _] if "it" in it:
+
+            data['rep'] = int(rep)
+            data['it'] = int(it[2:])
+            if "4" in batch:
+                data['it'] += 10
+
+            stem_params = dict(batched(file_path.stem.split("_"), n=2))
+            data.update(stem_params)
+
+        case _:
+            return None
+
+    data['records'] = _read_file_records(file_path)
+    return data
+
+
 def load_rs_df(rs_dir_path: Path = DEFAULT_RANDOMSEARCH_DIR) -> pd.DataFrame:
-    pass
+    rs_dir_path = Path(rs_dir_path)
+
+    if not rs_dir_path.exists():
+        raise FileNotFoundError
+
+    file_dics = []
+    for file_path in rs_dir_path.glob("./**/*.json"):
+        file_data = read_rs_file(file_path)
+        if file_data:
+            file_dics.append(file_data)
+
+    print(len(file_dics))
+    df = pd.DataFrame(file_dics)
+    return df
 
 
 if __name__ == "__main__":
     # pass
     df = load_benchmark_df()
     print(df)
-    df = load_rs_df("")
+    df = load_rs_df()
+    print(f'{df}')
