@@ -163,7 +163,7 @@ def load_ver_df(dir_path: Path = DEFAULT_RS_VERIFICATION_DIR) -> pd.DataFrame:
     for file_path in dir_path.glob("./**/*.json"):
         dfs.append(_read_ver_file(file_path))
 
-    df = pd.concat(dfs).rename(columns={"driving_score": "oracle_dscore"})
+    df = pd.concat(dfs)
 
     df['route_index'] = df['route_id'].apply(lambda x: int(x.split("_")[-1]))
     df = df.set_index('route_index').sort_index()
