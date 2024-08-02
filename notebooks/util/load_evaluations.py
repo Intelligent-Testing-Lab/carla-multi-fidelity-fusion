@@ -131,6 +131,7 @@ def load_rs_df(dir_path: Path = DEFAULT_RANDOMSEARCH_DIR) -> pd.DataFrame:
     df = pd.DataFrame(file_data_list)
     df = _transform_df(df)
     df = df.set_index(['fps', 'highquality', 'rep', 'it',]).sort_index()
+    df['route_index'] = df['route_id'].apply(lambda x: int(x.split("_")[-1]))
     return df
 
 
@@ -162,16 +163,18 @@ def load_ver_df(dir_path: Path = DEFAULT_RS_VERIFICATION_DIR) -> pd.DataFrame:
     for file_path in dir_path.glob("./**/*.json"):
         dfs.append(_read_ver_file(file_path))
 
-    df = (pd.concat(dfs)
-          .rename(columns={"driving_score": "oracle_dscore"})
-          .sort_values("route_id")
-          .reset_index())
+    df = pd.concat(dfs).rename(columns={"driving_score": "oracle_dscore"})
 
+    df['route_index'] = df['route_id'].apply(lambda x: int(x.split("_")[-1]))
+    df = df.set_index('route_index').sort_index()
     return df
 
 
 if __name__ == "__main__":
 
+    print("Benchmark df: ")
     print(load_benchmark_df())
+    print("Random search df: ")
     print(load_rs_df())
+    print("RS Verification df: ")
     print(load_ver_df())
