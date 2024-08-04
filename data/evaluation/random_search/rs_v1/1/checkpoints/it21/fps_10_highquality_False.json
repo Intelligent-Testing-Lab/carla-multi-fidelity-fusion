@@ -1,0 +1,120 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 2.7421078853614462,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 5.4842157707228925,
+                "outside_route_lanes": 2.7421078853614462,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 2.7421078853614462,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 305.1000045463443,
+                "duration_system": 651.3313245773315,
+                "exceptions": [
+                    [
+                        "RouteScenario_42",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 371.15122428941623
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 22.79323027947879,
+                "score_penalty": 0.2319750693929588,
+                "score_route": 98.25724091440078
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.guardrail and id=0 at (x=192.36, y=111.012, z=0.254)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.bmw.grandtourer and id=6225 at (x=0.939, y=108.951, z=0.254)",
+                        "Agent collided against object with type=vehicle.bmw.grandtourer and id=6225 at (x=4.243, y=108.376, z=0.254)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 3.199 meters (0.87% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 305.1000045463443,
+                    "duration_system": 651.3313245773315,
+                    "route_length": 371.15122428941623
+                },
+                "route_id": "RouteScenario_42",
+                "scores": {
+                    "score_composed": 22.79323027947879,
+                    "score_penalty": 0.2319750693929588,
+                    "score_route": 98.25724091440078
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "22.793",
+        "98.257",
+        "0.232",
+        "0.000",
+        "5.484",
+        "2.742",
+        "0.000",
+        "0.000",
+        "2.742",
+        "0.000",
+        "2.742",
+        "0.000"
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 11.327325674750137,
+                "outside_route_lanes": 3.7757752249167127,
+                "red_light": 0.0,
+                "route_dev": 3.7757752249167127,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 691.2000102996826,
+                "duration_system": 2460.417157649994,
+                "exceptions": [
+                    [
+                        "RouteScenario_490",
+                        0,
+                        "Failed - Agent deviated from the route"
+                    ]
+                ],
+                "total_length": 528.8553070319216
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 10.808869196253307,
+                "score_penalty": 0.21583569026154587,
+                "score_route": 50.079155968854415
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.audi.a2 and id=2032 at (x=-160.802, y=427.883, z=0.033)",
+                        "Agent collided against object with type=vehicle.audi.tt and id=2009 at (x=12.965, y=80.732, z=0.033)",
+                        "Agent collided against object with type=vehicle.audi.tt and id=2009 at (x=12.556, y=77.736, z=0.033)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 1.0 meters (0.08% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [
+                        "Agent deviated from the route at (x=46.109, y=81.53, z=93.619)"
+                    ],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 691.2000102996826,
+                    "duration_system": 2460.417157649994,
+                    "route_length": 528.8553070319216
+                },
+                "route_id": "RouteScenario_490",
+                "scores": {
+                    "score_composed": 10.808869196253307,
+                    "score_penalty": 0.21583569026154587,
+                    "score_route": 50.079155968854415
+                },
+                "status": "Failed - Agent deviated from the route"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "10.809",
+        "50.079",
+        "0.216",
+        "0.000",
+        "11.327",
+        "0.000",
+        "0.000",
+        "0.000",
+        "3.776",
+        "3.776",
+        "0.000",
+        "0.000"
+    ]
+}

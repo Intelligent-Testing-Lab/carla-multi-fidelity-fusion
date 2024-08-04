@@ -1,0 +1,120 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 12.359126953213153,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 24.718253906426305,
+                "outside_route_lanes": 12.359126953213153,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 12.359126953213153,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 351.1000052317977,
+                "duration_system": 912.5099229812622,
+                "exceptions": [
+                    [
+                        "RouteScenario_343",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 226.64098408080537
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 7.335193101423083,
+                "score_penalty": 0.20546497131675337,
+                "score_route": 35.70045567579908
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.vegetation and id=0 at (x=235.243, y=-114.784, z=0.128)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.bh.crossbike and id=5062 at (x=202.944, y=-230.521, z=0.052)",
+                        "Agent collided against object with type=vehicle.jeep.wrangler_rubicon and id=5199 at (x=202.636, y=-226.06, z=0.053)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 18.845 meters (12.19% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 351.1000052317977,
+                    "duration_system": 912.5099229812622,
+                    "route_length": 226.64098408080537
+                },
+                "route_id": "RouteScenario_343",
+                "scores": {
+                    "score_composed": 7.335193101423083,
+                    "score_penalty": 0.20546497131675337,
+                    "score_route": 35.70045567579908
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "7.335",
+        "35.700",
+        "0.205",
+        "0.000",
+        "24.718",
+        "12.359",
+        "0.000",
+        "0.000",
+        "12.359",
+        "0.000",
+        "12.359",
+        "0.000"
+    ]
+}

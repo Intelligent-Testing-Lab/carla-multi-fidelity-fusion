@@ -1,0 +1,122 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 20.105672425653353,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 80.42268970261341,
+                "outside_route_lanes": 20.105672425653353,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 20.105672425653353,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 293.10000436753035,
+                "duration_system": 658.8371212482452,
+                "exceptions": [
+                    [
+                        "RouteScenario_1",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 340.1641579938343
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 0.8577475387992409,
+                "score_penalty": 0.05866331954890146,
+                "score_route": 14.621530888381226
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.road and id=0 at (x=12.037, y=105.432, z=1.11)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.audi.a2 and id=30778 at (x=3.125, y=108.446, z=0.254)",
+                        "Agent collided against object with type=vehicle.seat.leon and id=30730 at (x=9.129, y=106.942, z=0.254)",
+                        "Agent collided against object with type=vehicle.bmw.isetta and id=30815 at (x=15.018, y=104.944, z=0.253)",
+                        "Agent collided against object with type=vehicle.lincoln.mkz2017 and id=30749 at (x=19.094, y=105.172, z=0.254)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 16.0 meters (30.36% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 293.10000436753035,
+                    "duration_system": 658.8371212482452,
+                    "route_length": 340.1641579938343
+                },
+                "route_id": "RouteScenario_1",
+                "scores": {
+                    "score_composed": 0.8577475387992409,
+                    "score_penalty": 0.05866331954890146,
+                    "score_route": 14.621530888381226
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "0.858",
+        "14.622",
+        "0.059",
+        "0.000",
+        "80.423",
+        "20.106",
+        "0.000",
+        "0.000",
+        "20.106",
+        "0.000",
+        "20.106",
+        "0.000"
+    ]
+}

@@ -1,0 +1,111 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 7.33468320418982,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 3.66734160209491,
+                "outside_route_lanes": 3.66734160209491,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 215.2000032067299,
+                "duration_system": 519.399327993393,
+                "total_length": 272.67708015767226
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 20.935530527354096,
+                "score_penalty": 0.20935530527354096,
+                "score_route": 100.0
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Completed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.pole and id=0 at (x=155.193, y=195.437, z=0.363)",
+                        "Agent collided against object with type=static.pole and id=0 at (x=152.193, y=195.876, z=0.366)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.bmw.grandtourer and id=28356 at (x=189.62, y=112.733, z=0.254)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 48.384 meters (17.41% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 215.2000032067299,
+                    "duration_system": 519.399327993393,
+                    "route_length": 272.67708015767226
+                },
+                "route_id": "RouteScenario_68",
+                "scores": {
+                    "score_composed": 20.935530527354096,
+                    "score_penalty": 0.20935530527354096,
+                    "score_route": 100.0
+                },
+                "status": "Completed"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "20.936",
+        "100.000",
+        "0.209",
+        "0.000",
+        "3.667",
+        "7.335",
+        "0.000",
+        "0.000",
+        "3.667",
+        "0.000",
+        "0.000",
+        "0.000"
+    ]
+}

@@ -1,0 +1,124 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 35.173774476858924,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 26.380330857644193,
+                "outside_route_lanes": 8.793443619214731,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 8.793443619214731,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 253.1000037714839,
+                "duration_system": 562.8015475273132,
+                "exceptions": [
+                    [
+                        "RouteScenario_34",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 305.44972654870196
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 0.9179777122989387,
+                "score_penalty": 0.024656467793389356,
+                "score_route": 37.23070636034321
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.building and id=0 at (x=174.487, y=310.582, z=0.358)",
+                        "Agent collided against object with type=static.building and id=0 at (x=165.432, y=310.897, z=0.359)",
+                        "Agent collided against object with type=static.static and id=0 at (x=151.715, y=310.359, z=0.358)",
+                        "Agent collided against object with type=static.static and id=0 at (x=148.69, y=310.2, z=0.358)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.seat.leon and id=32005 at (x=189.512, y=298.688, z=0.254)",
+                        "Agent collided against object with type=vehicle.nissan.patrol and id=31965 at (x=188.639, y=302.88, z=0.253)",
+                        "Agent collided against object with type=vehicle.nissan.patrol and id=31965 at (x=187.628, y=305.766, z=0.253)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 41.759 meters (36.05% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 253.1000037714839,
+                    "duration_system": 562.8015475273132,
+                    "route_length": 305.44972654870196
+                },
+                "route_id": "RouteScenario_34",
+                "scores": {
+                    "score_composed": 0.9179777122989387,
+                    "score_penalty": 0.024656467793389356,
+                    "score_route": 37.23070636034321
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "0.918",
+        "37.231",
+        "0.025",
+        "0.000",
+        "26.380",
+        "35.174",
+        "0.000",
+        "0.000",
+        "8.793",
+        "0.000",
+        "8.793",
+        "0.000"
+    ]
+}

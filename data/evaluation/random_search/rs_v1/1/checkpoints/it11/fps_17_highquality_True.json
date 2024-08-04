@@ -1,0 +1,118 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 5.646038333392769,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 1.4115095833481923,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 665.058826006949,
+                "duration_system": 2418.6485879421234,
+                "exceptions": [
+                    [
+                        "RouteScenario_151",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 822.2931061732372
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 11.165920235973866,
+                "score_penalty": 0.1296,
+                "score_route": 86.1567919442428
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.mustang.mustang and id=7791 at (x=15.985, y=109.938, z=0.033)",
+                        "Agent collided against object with type=vehicle.chevrolet.impala and id=7700 at (x=15.066, y=105.238, z=0.033)",
+                        "Agent collided against object with type=vehicle.chevrolet.impala and id=7700 at (x=14.15, y=102.381, z=0.033)",
+                        "Agent collided against object with type=vehicle.nissan.patrol and id=7637 at (x=13.405, y=91.715, z=0.033)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 665.058826006949,
+                    "duration_system": 2418.6485879421234,
+                    "route_length": 822.2931061732372
+                },
+                "route_id": "RouteScenario_151",
+                "scores": {
+                    "score_composed": 11.165920235973866,
+                    "score_penalty": 0.1296,
+                    "score_route": 86.1567919442428
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "11.166",
+        "86.157",
+        "0.130",
+        "0.000",
+        "5.646",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "1.412",
+        "0.000"
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 52.28238730393651,
+                "outside_route_lanes": 5.809154144881834,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 5.809154144881834
+            },
+            "meta": {
+                "duration_game": 1093.650016296655,
+                "duration_system": 3893.369570493698,
+                "exceptions": [
+                    [
+                        "RouteScenario_138",
+                        0,
+                        "Failed - Agent got blocked"
+                    ]
+                ],
+                "total_length": 304.97201517154275
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 0.5674779290437157,
+                "score_penalty": 0.010053606090527663,
+                "score_route": 56.4452121889263
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.audi.a2 and id=52439 at (x=-321.104, y=431.577, z=0.034)",
+                        "Agent collided against object with type=vehicle.tesla.model3 and id=52518 at (x=-244.755, y=429.699, z=0.034)",
+                        "Agent collided against object with type=vehicle.tesla.model3 and id=52518 at (x=-192.802, y=429.492, z=0.034)",
+                        "Agent collided against object with type=vehicle.volkswagen.t2 and id=52476 at (x=-62.051, y=379.424, z=0.033)",
+                        "Agent collided against object with type=vehicle.citroen.c3 and id=52566 at (x=15.377, y=123.585, z=0.033)",
+                        "Agent collided against object with type=vehicle.citroen.c3 and id=52566 at (x=14.65, y=119.509, z=0.033)",
+                        "Agent collided against object with type=vehicle.citroen.c3 and id=52566 at (x=14.165, y=116.542, z=0.033)",
+                        "Agent collided against object with type=vehicle.audi.etron and id=52477 at (x=14.09, y=113.027, z=0.033)",
+                        "Agent collided against object with type=vehicle.nissan.patrol and id=52413 at (x=14.153, y=99.358, z=0.034)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 3.238 meters (0.24% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=15.697, y=82.57, z=0.033)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 1093.650016296655,
+                    "duration_system": 3893.369570493698,
+                    "route_length": 304.97201517154275
+                },
+                "route_id": "RouteScenario_138",
+                "scores": {
+                    "score_composed": 0.5674779290437157,
+                    "score_penalty": 0.010053606090527663,
+                    "score_route": 56.4452121889263
+                },
+                "status": "Failed - Agent got blocked"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "0.567",
+        "56.445",
+        "0.010",
+        "0.000",
+        "52.282",
+        "0.000",
+        "0.000",
+        "0.000",
+        "5.809",
+        "0.000",
+        "0.000",
+        "5.809"
+    ]
+}

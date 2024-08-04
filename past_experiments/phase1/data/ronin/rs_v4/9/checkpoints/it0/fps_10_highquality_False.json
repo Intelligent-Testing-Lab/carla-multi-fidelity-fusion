@@ -1,0 +1,129 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 11.686514193099558,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 5.843257096549779,
+                "outside_route_lanes": 1.4608142741374448,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 1.4608142741374448,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 665.1000099107623,
+                "duration_system": 1575.2266747951508,
+                "exceptions": [
+                    [
+                        "RouteScenario_151",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 822.2931061732372
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 0.3329878613124488,
+                "score_penalty": 0.0039999084863455445,
+                "score_route": 83.24886993019135
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.guardrail and id=0 at (x=14.51, y=266.211, z=0.034)",
+                        "Agent collided against object with type=static.guardrail and id=0 at (x=15.275, y=263.303, z=0.032)",
+                        "Agent collided against object with type=static.guardrail and id=0 at (x=16.13, y=258.971, z=0.033)",
+                        "Agent collided against object with type=static.guardrail and id=0 at (x=16.624, y=256.002, z=0.033)",
+                        "Agent collided against object with type=static.guardrail and id=0 at (x=17.154, y=252.779, z=0.033)",
+                        "Agent collided against object with type=static.guardrail and id=0 at (x=18.744, y=240.944, z=0.034)",
+                        "Agent collided against object with type=static.guardrail and id=0 at (x=18.967, y=237.766, z=0.031)",
+                        "Agent collided against object with type=static.guardrail and id=0 at (x=19.22, y=233.966, z=0.032)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.dodge_charger.police and id=65449 at (x=13.464, y=134.427, z=0.034)",
+                        "Agent collided against object with type=vehicle.dodge_charger.police and id=65449 at (x=15.586, y=126.681, z=0.033)",
+                        "Agent collided against object with type=vehicle.dodge_charger.police and id=65449 at (x=16.065, y=121.146, z=0.033)",
+                        "Agent collided against object with type=vehicle.chevrolet.impala and id=65495 at (x=15.735, y=109.047, z=0.033)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 21.584 meters (3.14% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 665.1000099107623,
+                    "duration_system": 1575.2266747951508,
+                    "route_length": 822.2931061732372
+                },
+                "route_id": "RouteScenario_151",
+                "scores": {
+                    "score_composed": 0.3329878613124488,
+                    "score_penalty": 0.0039999084863455445,
+                    "score_route": 83.24886993019135
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "0.333",
+        "83.249",
+        "0.004",
+        "0.000",
+        "5.843",
+        "11.687",
+        "0.000",
+        "0.000",
+        "1.461",
+        "0.000",
+        "1.461",
+        "0.000"
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 5.807224609587861,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 2.9036123047939304,
+                "outside_route_lanes": 2.9036123047939304,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 2.9036123047939304,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 375.10000558942556,
+                "duration_system": 912.4007217884064,
+                "exceptions": [
+                    [
+                        "RouteScenario_240",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 443.7662218981293
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 13.72737021569803,
+                "score_penalty": 0.17688060563156896,
+                "score_route": 77.60811405344953
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.pole and id=0 at (x=-84.57, y=-99.215, z=2.856)",
+                        "Agent collided against object with type=static.pole and id=0 at (x=-41.892, y=-97.356, z=0.195)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.citroen.c3 and id=7420 at (x=-13.261, y=59.544, z=0.033)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 108.726 meters (30.22% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 375.10000558942556,
+                    "duration_system": 912.4007217884064,
+                    "route_length": 443.7662218981293
+                },
+                "route_id": "RouteScenario_240",
+                "scores": {
+                    "score_composed": 13.72737021569803,
+                    "score_penalty": 0.17688060563156896,
+                    "score_route": 77.60811405344953
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "13.727",
+        "77.608",
+        "0.177",
+        "0.000",
+        "2.904",
+        "5.807",
+        "0.000",
+        "0.000",
+        "2.904",
+        "0.000",
+        "2.904",
+        "0.000"
+    ]
+}

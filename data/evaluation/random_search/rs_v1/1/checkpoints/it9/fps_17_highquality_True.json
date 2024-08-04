@@ -1,0 +1,117 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 14.267392049335145,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 4.755797349778382,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 471.05882528424263,
+                "duration_system": 1472.350468158722,
+                "exceptions": [
+                    [
+                        "RouteScenario_296",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 557.5280254763043
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 8.146362048250607,
+                "score_penalty": 0.216,
+                "score_route": 37.71463911227133
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.nissan.patrol and id=7074 at (x=-12.571, y=23.983, z=0.034)",
+                        "Agent collided against object with type=vehicle.volkswagen.t2 and id=7191 at (x=-13.559, y=52.367, z=0.034)",
+                        "Agent collided against object with type=vehicle.volkswagen.t2 and id=7191 at (x=-14.841, y=55.495, z=0.033)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 471.05882528424263,
+                    "duration_system": 1472.350468158722,
+                    "route_length": 557.5280254763043
+                },
+                "route_id": "RouteScenario_296",
+                "scores": {
+                    "score_composed": 8.146362048250607,
+                    "score_penalty": 0.216,
+                    "score_route": 37.71463911227133
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "8.146",
+        "37.715",
+        "0.216",
+        "0.000",
+        "14.267",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "4.756",
+        "0.000"
+    ]
+}

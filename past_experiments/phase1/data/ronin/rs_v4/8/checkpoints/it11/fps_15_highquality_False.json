@@ -1,0 +1,114 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 11.797599440000704,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 395.9333539828658,
+                "duration_system": 1142.3655915260315,
+                "total_length": 762.8670600126311
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 1.0077695999999998,
+                "score_penalty": 0.010077695999999999,
+                "score_route": 100.0
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Completed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.jeep.wrangler_rubicon and id=59938 at (x=26.931, y=15.927, z=11.033)",
+                        "Agent collided against object with type=vehicle.audi.tt and id=59886 at (x=22.227, y=14.61, z=11.033)",
+                        "Agent collided against object with type=vehicle.kawasaki.ninja and id=60013 at (x=-36.129, y=7.827, z=10.413)",
+                        "Agent collided against object with type=vehicle.audi.etron and id=59988 at (x=-68.444, y=10.782, z=9.861)",
+                        "Agent collided against object with type=vehicle.audi.etron and id=59988 at (x=-199.458, y=10.478, z=4.79)",
+                        "Agent collided against object with type=vehicle.audi.etron and id=59959 at (x=-221.816, y=11.263, z=3.634)",
+                        "Agent collided against object with type=vehicle.mercedes-benz.coupe and id=59965 at (x=-228.617, y=8.905, z=3.293)",
+                        "Agent collided against object with type=vehicle.mercedes-benz.coupe and id=59965 at (x=-232.398, y=8.455, z=3.112)",
+                        "Agent collided against object with type=vehicle.audi.etron and id=59988 at (x=-409.226, y=6.967, z=0.034)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 395.9333539828658,
+                    "duration_system": 1142.3655915260315,
+                    "route_length": 762.8670600126311
+                },
+                "route_id": "RouteScenario_510",
+                "scores": {
+                    "score_composed": 1.0077695999999998,
+                    "score_penalty": 0.010077695999999999,
+                    "score_route": 100.0
+                },
+                "status": "Completed"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "1.008",
+        "100.000",
+        "0.010",
+        "0.000",
+        "11.798",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000"
+    ]
+}

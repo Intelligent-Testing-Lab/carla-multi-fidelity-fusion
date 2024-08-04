@@ -1,0 +1,120 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 19.72658027747897,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 0.0,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 3.287763379579828
+            },
+            "meta": {
+                "duration_game": 332.10000494867563,
+                "duration_system": 766.5868878364563,
+                "exceptions": [
+                    [
+                        "RouteScenario_537",
+                        0,
+                        "Failed - Agent got blocked"
+                    ]
+                ],
+                "total_length": 424.3888051757746
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 5.405248523173031,
+                "score_penalty": 0.07541889062500003,
+                "score_route": 71.66969015825443
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.guardrail and id=0 at (x=53.692, y=-194.006, z=0.034)",
+                        "Agent collided against object with type=static.guardrail and id=0 at (x=56.664, y=-194.458, z=0.046)",
+                        "Agent collided against object with type=static.guardrail and id=0 at (x=59.67, y=-194.498, z=0.035)",
+                        "Agent collided against object with type=static.guardrail and id=0 at (x=66.001, y=-195.317, z=0.033)",
+                        "Agent collided against object with type=static.guardrail and id=0 at (x=69.012, y=-195.457, z=0.035)",
+                        "Agent collided against object with type=static.guardrail and id=0 at (x=72.079, y=-195.568, z=0.035)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=196.654, y=-23.669, z=0.033)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 332.10000494867563,
+                    "duration_system": 766.5868878364563,
+                    "route_length": 424.3888051757746
+                },
+                "route_id": "RouteScenario_537",
+                "scores": {
+                    "score_composed": 5.405248523173031,
+                    "score_penalty": 0.07541889062500003,
+                    "score_route": 71.66969015825443
+                },
+                "status": "Failed - Agent got blocked"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "5.405",
+        "71.670",
+        "0.075",
+        "0.000",
+        "0.000",
+        "19.727",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "3.288"
+    ]
+}

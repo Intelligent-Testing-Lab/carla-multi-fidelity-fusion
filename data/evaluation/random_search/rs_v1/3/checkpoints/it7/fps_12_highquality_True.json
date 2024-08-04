@@ -1,0 +1,117 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 10.347546767203898,
+                "outside_route_lanes": 3.4491822557346326,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 224.33334001898766,
+                "duration_system": 531.4657685756683,
+                "exceptions": [
+                    [
+                        "RouteScenario_5",
+                        0,
+                        "Completed"
+                    ]
+                ],
+                "total_length": 289.92379232422223
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 20.31847177953782,
+                "score_penalty": 0.2031847177953782,
+                "score_route": 100.0
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.tesla.cybertruck and id=2610 at (x=175.701, y=190.168, z=0.254)",
+                        "Agent collided against object with type=vehicle.volkswagen.t2 and id=2539 at (x=172.54, y=190.525, z=0.188)",
+                        "Agent collided against object with type=vehicle.volkswagen.t2 and id=2539 at (x=169.415, y=190.379, z=0.253)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 18.384 meters (5.93% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 224.33334001898766,
+                    "duration_system": 531.4657685756683,
+                    "route_length": 289.92379232422223
+                },
+                "route_id": "RouteScenario_5",
+                "scores": {
+                    "score_composed": 20.31847177953782,
+                    "score_penalty": 0.2031847177953782,
+                    "score_route": 100.0
+                },
+                "status": "Completed"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "20.318",
+        "100.000",
+        "0.203",
+        "0.000",
+        "10.348",
+        "0.000",
+        "0.000",
+        "0.000",
+        "3.449",
+        "0.000",
+        "0.000",
+        "0.000"
+    ]
+}

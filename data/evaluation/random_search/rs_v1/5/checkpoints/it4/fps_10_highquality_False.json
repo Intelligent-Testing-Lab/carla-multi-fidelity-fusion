@@ -1,0 +1,120 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 20.474408479299058,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 40.948816958598115,
+                "outside_route_lanes": 20.474408479299058,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 20.474408479299058
+            },
+            "meta": {
+                "duration_game": 331.9000049456954,
+                "duration_system": 868.2045047283173,
+                "exceptions": [
+                    [
+                        "RouteScenario_161",
+                        0,
+                        "Failed - Agent got blocked"
+                    ]
+                ],
+                "total_length": 265.0023765310069
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 3.542102607647365,
+                "score_penalty": 0.19218623102973648,
+                "score_route": 18.43057428551843
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [
+                        "Agent collided against object with type=static.dynamic and id=0 at (x=139.487, y=-178.171, z=0.363)"
+                    ],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.lincoln.mkz2017 and id=1368 at (x=23.201, y=-176.242, z=0.208)",
+                        "Agent collided against object with type=vehicle.audi.tt and id=1326 at (x=48.104, y=-173.252, z=0.229)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 24.901 meters (17.87% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=139.862, y=-178.407, z=0.383)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 331.9000049456954,
+                    "duration_system": 868.2045047283173,
+                    "route_length": 265.0023765310069
+                },
+                "route_id": "RouteScenario_161",
+                "scores": {
+                    "score_composed": 3.542102607647365,
+                    "score_penalty": 0.19218623102973648,
+                    "score_route": 18.43057428551843
+                },
+                "status": "Failed - Agent got blocked"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "3.542",
+        "18.431",
+        "0.192",
+        "0.000",
+        "40.949",
+        "20.474",
+        "0.000",
+        "0.000",
+        "20.474",
+        "0.000",
+        "0.000",
+        "20.474"
+    ]
+}

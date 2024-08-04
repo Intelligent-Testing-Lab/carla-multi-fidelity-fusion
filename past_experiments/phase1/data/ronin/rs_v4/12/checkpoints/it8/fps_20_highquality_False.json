@@ -1,0 +1,119 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 21.418764849996016,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 4.283752969999203
+            },
+            "meta": {
+                "duration_game": 872.8500130064785,
+                "duration_system": 3045.8895769119263,
+                "exceptions": [
+                    [
+                        "RouteScenario_141",
+                        0,
+                        "Failed - Agent got blocked"
+                    ]
+                ],
+                "total_length": 478.09525655866923
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 3.7967971819244313,
+                "score_penalty": 0.07776,
+                "score_route": 48.82712425314341
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.tesla.model3 and id=17205 at (x=-191.688, y=433.042, z=0.034)",
+                        "Agent collided against object with type=vehicle.audi.tt and id=17072 at (x=-53.026, y=375.861, z=0.035)",
+                        "Agent collided against object with type=vehicle.kawasaki.ninja and id=17143 at (x=15.923, y=129.351, z=0.033)",
+                        "Agent collided against object with type=vehicle.audi.etron and id=17108 at (x=14.412, y=125.19, z=0.033)",
+                        "Agent collided against object with type=vehicle.dodge_charger.police and id=17122 at (x=14.6, y=81.935, z=0.033)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=14.428, y=80.493, z=0.033)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 872.8500130064785,
+                    "duration_system": 3045.8895769119263,
+                    "route_length": 478.09525655866923
+                },
+                "route_id": "RouteScenario_141",
+                "scores": {
+                    "score_composed": 3.7967971819244313,
+                    "score_penalty": 0.07776,
+                    "score_route": 48.82712425314341
+                },
+                "status": "Failed - Agent got blocked"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "3.797",
+        "48.827",
+        "0.078",
+        "0.000",
+        "21.419",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "4.284"
+    ]
+}

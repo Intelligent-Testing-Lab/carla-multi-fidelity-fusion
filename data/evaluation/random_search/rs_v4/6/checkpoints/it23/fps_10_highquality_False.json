@@ -1,0 +1,117 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 0.0,
+                "outside_route_lanes": 5.684830068879609,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 5.684830068879609,
+                "stop_infraction": 5.684830068879609,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 241.10000359266996,
+                "duration_system": 520.2599029541016,
+                "exceptions": [
+                    [
+                        "RouteScenario_658",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 285.11695758252785
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 33.63279438685405,
+                "score_penalty": 0.5451342734304311,
+                "score_route": 61.696349002620906
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 58.162 meters (31.86% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [
+                        "Agent ran a stop with id=50588 at (x=-205.269, y=94.945, z=0.0)"
+                    ],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 241.10000359266996,
+                    "duration_system": 520.2599029541016,
+                    "route_length": 285.11695758252785
+                },
+                "route_id": "RouteScenario_658",
+                "scores": {
+                    "score_composed": 33.63279438685405,
+                    "score_penalty": 0.5451342734304311,
+                    "score_route": 61.696349002620906
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "33.633",
+        "61.696",
+        "0.545",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "5.685",
+        "5.685",
+        "0.000",
+        "5.685",
+        "0.000"
+    ]
+}

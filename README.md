@@ -4,22 +4,25 @@ This repository contains several experiments for running CARLA at diffrent fidel
 
 ## Repository structure
 
+> [!NOTE]  
+> Need to update
 Repository is divided in following structure
 
 - `experiments/`
-  - `fidelity/` (main experiments showing influence of fidelity parameters on execution time and ADS behaviour)
+  - `high_low_fidelity/` (main experiments showing influence of fidelity parameters on execution time and ADS behaviour)
   - `past_experiments/`
+    - `fidelity_v1/` (past fidelity experiments on FPS and substepping)
+    - `fidelity_v2/` (past fidelity experiments on FPS and render quality)
     - `determinism_check/` (checking if ADS is deterministic spoiler its NOT)
     - `paralelism_check/` (checking how much time we can save on running two instances of CARLA and ADS at once)
-    - `old_fidelity_experiments/` (past fidelity experiments)
 
-Each experiment directory contains `data` for this round of experiments and a Python notebook that loads the data and answear questions.
+Each experiment directory contains `data` for this round of experiments and a Python notebook that loads the data and answer questions.
 
-## Data genertion
+## Data generation
 
 Data was obtained by [evaluating InterFuser](https://github.com/opendilab/InterFuser?tab=readme-ov-file#evaluation) state of the art autonomous driving system (ADS).  
 
-ADS was evaluated using [custom scripts](https://github.com/PanZWarzywniaka/InterFuser/tree/main/leaderboard/scripts) to chage simulator fidelity parameters.
+ADS was evaluated using [custom scripts](https://github.com/PanZWarzywniaka/InterFuser/tree/main/leaderboard/scripts) to change simulator fidelity parameters.
 
 <!-- Fidelity parameters:
 - FPS: `int`  defined as: 1/[fixed_delta_seconds](https://carla.readthedocs.io/en/latest/python_api/#carla.WorldSettings.fixed_delta_seconds), default: 20
@@ -47,7 +50,7 @@ Subsidiary evaluation to check if ADS was deterministic. -->
 - Scipy
 - Matplotlib
 
-Tested with provided `conda` enviroment (`environment.yml`).
+Tested with provided `conda` environment (`environment.yml`).
 
 ## Contact
 

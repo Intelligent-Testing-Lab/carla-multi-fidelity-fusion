@@ -1,0 +1,116 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 5.243377528889202,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 214.30000319331884,
+                "duration_system": 779.3069722652435,
+                "exceptions": [
+                    [
+                        "RouteScenario_510",
+                        0,
+                        "Completed"
+                    ]
+                ],
+                "total_length": 762.8670600126311
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 12.959999999999999,
+                "score_penalty": 0.1296,
+                "score_route": 100.0
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.audi.etron and id=6521 at (x=-64.732, y=11.075, z=9.926)",
+                        "Agent collided against object with type=vehicle.citroen.c3 and id=6579 at (x=-217.996, y=11.075, z=3.83)",
+                        "Agent collided against object with type=vehicle.audi.etron and id=6492 at (x=-321.095, y=10.737, z=0.345)",
+                        "Agent collided against object with type=vehicle.bmw.grandtourer and id=6403 at (x=-376.942, y=11.172, z=0.027)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 214.30000319331884,
+                    "duration_system": 779.3069722652435,
+                    "route_length": 762.8670600126311
+                },
+                "route_id": "RouteScenario_510",
+                "scores": {
+                    "score_composed": 12.959999999999999,
+                    "score_penalty": 0.1296,
+                    "score_route": 100.0
+                },
+                "status": "Completed"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "12.960",
+        "100.000",
+        "0.130",
+        "0.000",
+        "5.243",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000"
+    ]
+}

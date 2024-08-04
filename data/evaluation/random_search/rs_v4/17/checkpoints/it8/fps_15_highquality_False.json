@@ -1,0 +1,119 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 58.01204666531957,
+                "outside_route_lanes": 19.33734888843986,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 19.33734888843986,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 279.0666812211275,
+                "duration_system": 668.9623787403107,
+                "exceptions": [
+                    [
+                        "RouteScenario_44",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 337.64254347589883
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 2.5533440880624925,
+                "score_penalty": 0.16671068664443042,
+                "score_route": 15.316019263410526
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.volkswagen.t2 and id=52146 at (x=-5.194, y=162.477, z=0.254)",
+                        "Agent collided against object with type=vehicle.volkswagen.t2 and id=52146 at (x=-5.994, y=159.501, z=0.255)",
+                        "Agent collided against object with type=vehicle.dodge_charger.police and id=52219 at (x=-6.66, y=156.566, z=0.256)"
+                    ],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 11.997 meters (22.82% of the completed route)"
+                    ],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 279.0666812211275,
+                    "duration_system": 668.9623787403107,
+                    "route_length": 337.64254347589883
+                },
+                "route_id": "RouteScenario_44",
+                "scores": {
+                    "score_composed": 2.5533440880624925,
+                    "score_penalty": 0.16671068664443042,
+                    "score_route": 15.316019263410526
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "2.553",
+        "15.316",
+        "0.167",
+        "0.000",
+        "58.012",
+        "0.000",
+        "0.000",
+        "0.000",
+        "19.337",
+        "0.000",
+        "19.337",
+        "0.000"
+    ]
+}

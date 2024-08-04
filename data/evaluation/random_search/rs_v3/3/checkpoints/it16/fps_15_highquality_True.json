@@ -1,0 +1,122 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 39.03480752165842,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 4.879350940207303,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 0.0
+            },
+            "meta": {
+                "duration_game": 471.06669123470783,
+                "duration_system": 1323.011286020279,
+                "exceptions": [
+                    [
+                        "RouteScenario_296",
+                        0,
+                        "Failed - Agent timed out"
+                    ]
+                ],
+                "total_length": 557.5280254763043
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 0.6174207837684601,
+                "score_penalty": 0.016796159999999997,
+                "score_route": 36.75963933235098
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.mercedes-benz.coupe and id=26128 at (x=-15.331, y=-49.484, z=0.034)",
+                        "Agent collided against object with type=vehicle.mercedes-benz.coupe and id=26128 at (x=-13.953, y=-46.801, z=0.033)",
+                        "Agent collided against object with type=vehicle.chevrolet.impala and id=26136 at (x=-13.519, y=4.74, z=0.034)",
+                        "Agent collided against object with type=vehicle.chevrolet.impala and id=26136 at (x=-14.875, y=30.79, z=0.025)",
+                        "Agent collided against object with type=vehicle.nissan.patrol and id=26068 at (x=-13.217, y=55.186, z=0.033)",
+                        "Agent collided against object with type=vehicle.nissan.patrol and id=26068 at (x=-13.427, y=58.499, z=0.033)",
+                        "Agent collided against object with type=vehicle.nissan.patrol and id=26068 at (x=-13.521, y=61.527, z=0.042)",
+                        "Agent collided against object with type=vehicle.nissan.patrol and id=26068 at (x=-13.478, y=65.002, z=0.033)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [
+                        "Route timeout."
+                    ],
+                    "stop_infraction": [],
+                    "vehicle_blocked": []
+                },
+                "meta": {
+                    "duration_game": 471.06669123470783,
+                    "duration_system": 1323.011286020279,
+                    "route_length": 557.5280254763043
+                },
+                "route_id": "RouteScenario_296",
+                "scores": {
+                    "score_composed": 0.6174207837684601,
+                    "score_penalty": 0.016796159999999997,
+                    "score_route": 36.75963933235098
+                },
+                "status": "Failed - Agent timed out"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "0.617",
+        "36.760",
+        "0.017",
+        "0.000",
+        "39.035",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "4.879",
+        "0.000"
+    ]
+}

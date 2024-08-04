@@ -1,0 +1,119 @@
+{
+    "_checkpoint": {
+        "global_record": {
+            "index": -1,
+            "infractions": {
+                "collisions_layout": 0.0,
+                "collisions_pedestrian": 0.0,
+                "collisions_vehicle": 7.978511313224063,
+                "outside_route_lanes": 0.0,
+                "red_light": 0.0,
+                "route_dev": 0.0,
+                "route_timeout": 0.0,
+                "stop_infraction": 0.0,
+                "vehicle_blocked": 1.5957022626448125
+            },
+            "meta": {
+                "duration_game": 598.4000089168549,
+                "duration_system": 2742.5221252441406,
+                "exceptions": [
+                    [
+                        "RouteScenario_152",
+                        0,
+                        "Failed - Agent got blocked"
+                    ]
+                ],
+                "total_length": 870.0053735850768
+            },
+            "route_id": -1,
+            "scores": {
+                "score_composed": 5.601217745075785,
+                "score_penalty": 0.07776,
+                "score_route": 72.03212120725033
+            },
+            "scores_std_dev": {
+                "score_composed": "NaN",
+                "score_penalty": "NaN",
+                "score_route": "NaN"
+            },
+            "status": "Failed"
+        },
+        "progress": [
+            1,
+            1
+        ],
+        "records": [
+            {
+                "index": 0,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.lincoln.mkz2017 and id=55069 at (x=16.056, y=110.054, z=0.033)",
+                        "Agent collided against object with type=vehicle.lincoln.mkz2017 and id=55069 at (x=15.592, y=107.074, z=0.033)",
+                        "Agent collided against object with type=vehicle.lincoln.mkz2017 and id=55069 at (x=15.399, y=104.021, z=0.052)",
+                        "Agent collided against object with type=vehicle.lincoln.mkz2017 and id=55069 at (x=14.646, y=101.095, z=0.032)",
+                        "Agent collided against object with type=vehicle.lincoln.mkz2017 and id=55069 at (x=15.158, y=97.638, z=0.034)"
+                    ],
+                    "outside_route_lanes": [],
+                    "red_light": [],
+                    "route_dev": [],
+                    "route_timeout": [],
+                    "stop_infraction": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=15.544, y=94.769, z=0.033)"
+                    ]
+                },
+                "meta": {
+                    "duration_game": 598.4000089168549,
+                    "duration_system": 2742.5221252441406,
+                    "route_length": 870.0053735850768
+                },
+                "route_id": "RouteScenario_152",
+                "scores": {
+                    "score_composed": 5.601217745075785,
+                    "score_penalty": 0.07776,
+                    "score_route": 72.03212120725033
+                },
+                "status": "Failed - Agent got blocked"
+            }
+        ]
+    },
+    "eligible": true,
+    "entry_status": "Finished with agent errors",
+    "labels": [
+        "Avg. driving score",
+        "Avg. route completion",
+        "Avg. infraction penalty",
+        "Collisions with pedestrians",
+        "Collisions with vehicles",
+        "Collisions with layout",
+        "Red lights infractions",
+        "Stop sign infractions",
+        "Off-road infractions",
+        "Route deviations",
+        "Route timeouts",
+        "Agent blocked"
+    ],
+    "sensors": [
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_lidar"
+    ],
+    "values": [
+        "5.601",
+        "72.032",
+        "0.078",
+        "0.000",
+        "7.979",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "0.000",
+        "1.596"
+    ]
+}
